@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2022.9.9)  10 SEP 2022 15:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2022.9.9)  11 SEP 2022 02:35
 entering extended mode
 **"c:/Users/angus/OneDrive/Documents/CATAM 7.5/Project Write-up/CATAM 7.5.tex"
 (c:/Users/angus/OneDrive/Documents/CATAM 7.5/Project Write-up/CATAM 7.5.tex
@@ -301,21 +301,62 @@ Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count295
 [1
 
-{C:/Users/angus/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [1] (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+{C:/Users/angus/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
+ (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
+ (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 73--79
+
+ []
+
+<q1_fig1.png, id=6, 891.33pt x 644.4075pt>
+File: q1_fig1.png Graphic file (type png)
+<use q1_fig1.png>
+Package pdftex.def Info: q1_fig1.png  used on input line 86.
+(pdftex.def)             Requested size: 440.84746pt x 318.72212pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--94
+
+ []
+
+[1 <./q1_fig1.png>] [2] (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-) (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_1.py) [2] (CATAM 7.5.aux) ) 
+) (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Program_A.py
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 35.
+ (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
+File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 35.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 38.
+ (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
+ [3]
+Overfull \hbox (73.80165pt too wide) in paragraph at lines 102--103
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [4] [5] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Program_B.py) [6] (CATAM 7.5.aux) ) 
 Here is how much of TeX's memory you used:
- 7109 strings out of 475413
- 111379 string characters out of 2777672
- 627083 words of memory out of 3000000
- 28440 multiletter control sequences out of 15000+600000
- 470777 words of font info for 33 fonts, out of 8000000 for 9000
+ 7291 strings out of 475413
+ 114158 string characters out of 2777672
+ 690419 words of memory out of 3000000
+ 28581 multiletter control sequences out of 15000+600000
+ 478816 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,5n,63p,305b,1233s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on "CATAM 7.5.pdf" (3 pages, 25757 bytes).
+ 55i,10n,63p,305b,1800s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\angus\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\angus\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "CATAM 7.5.pdf" (7 pages, 184180 bytes).
 PDF statistics:
- 22 PDF objects out of 1000 (max. 8388607)
+ 90 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

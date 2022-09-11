@@ -2,7 +2,7 @@ import numpy as np
 import math
 
 
-class approximant:
+class approximator:
     def __init__(self, c_vector, L, M, x = None):
         self.c_vector = c_vector
         self.L = L
@@ -43,6 +43,8 @@ class approximant:
             rows.append(row)
         
         c_matrix = np.vstack(rows)
+        print(c_matrix)
+        print(np.linalg.det(c_matrix))
 
         q_vector = np.linalg.lstsq(c_matrix, c_target)[0]
         # Need 0 index of result from lstsq function
@@ -101,11 +103,12 @@ if __name__ == '__main__':
     L = 3
     M = 4
 
-    approximator = approximant(c_vector, L, M)
+    approximant = approximator(c_vector, L, M)
 
     # For testing:
     print('c_vector: ', c_vector)
-    print('p_vector: ', approximator.p_vector)
-    print('q_vector: ', approximator.q_vector)
+    print('p_vector: ', approximant.p_vector)
+    print('q_vector: ', approximant.q_vector)
     # Index 0 entry of q_k meaningless but want to keep
     # other indexing consistent
+    print(approximant.evaluate_approximant([1, 2, 3]))
