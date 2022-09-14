@@ -43,10 +43,11 @@ class approximator:
             rows.append(row)
         
         c_matrix = np.vstack(rows)
-        print(c_matrix)
-        print(np.linalg.det(c_matrix))
+        # print(c_matrix)
+        # print(np.linalg.det(c_matrix))
 
-        q_vector = np.linalg.lstsq(c_matrix, c_target)[0]
+        q_vector = np.linalg.lstsq(c_matrix, c_target, 
+                                        rcond = None)[0]
         # Need 0 index of result from lstsq function
 
         # NOTE: q_vector starts from q_1 unlike p_vector

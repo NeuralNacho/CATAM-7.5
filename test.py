@@ -1,5 +1,9 @@
 import numpy as np
+import matplotlib.pyplot as plt
+import math
 
 
-a = 2/5
-print(type(a))
+a = np.arange(3)
+print(a)
+print(a-2)
+

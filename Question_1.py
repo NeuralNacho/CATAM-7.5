@@ -41,30 +41,69 @@ def plot_partial_sum(N):
     plt.show()
 
 
-def error_bound(k):
-    return 3 / (2*k)
+def error_bound(N):
+    return 0.69 * 1/math.sqrt(2*N) * 1/(2*N + 2)
+    return 0.69 * 2**(-2*N) * (math.factorial(2*N - 1)) / \
+        (math.factorial(N - 1) * math.factorial(N + 1))
 
 
 def plot_error(N):
     current_sum = 1
-    y_vector = [1]
+    y_vector = []
     bound_vector = []
-    for k in range(1, N + 1):
-        current_sum += find_coefficient(k)
+    x_axis = np.arange(1, N + 1, 1)
+    for m in range(1, N + 1):
+        current_sum += find_coefficient(m)
         y_vector.append(current_sum)
-        bound_vector.append(error_bound(k))
+        bound_vector.append(error_bound(m))
     error_vector = np.array(y_vector) - math.sqrt(2)
 
     plt.rc('font', size = 32)
     plt.grid(linestyle = '--', linewidth = 0.5)
-    plt.plot(error_vector, color = 'C0')
-    plt.plot(bound_vector, color = 'C1')
-    plt.xlabel('$k$')
+    plt.plot(x_axis, error_vector, color = 'C0', 
+                        label = '$Actual$ $error$')
+    plt.plot(x_axis, bound_vector, color = 'C1', 
+                        label = '$Error$ $bound$')
+    plt.plot(x_axis, np.negative(bound_vector), color = 'C1')
+    plt.legend(loc = 'best')
+    plt.xticks(np.append(0, x_axis))
+    plt.xlabel('$N$')
     plt.ylabel('$Error$') 
     plt.show()
 
 
+def tabulate_error(N):
+    partial_sums = []
+    current_sum = 0
+    for m in range(N + 1):
+        current_sum += find_coefficient(m)
+        partial_sums.append(current_sum)
+    
+    error_vector = np.absolute(np.array(partial_sums) \
+                                    - math.sqrt(2))
+    
+    print('N        Error')
+    for k in range(N + 1):
+        print(k, '\t', error_vector[k])
+
+
+def find_xi(N):
+    power = 1/2 - N
+    partial_sum = find_partial_sum(N)
+    error = abs(math.sqrt(2) - partial_sum)
+    coefficient = 2**(-2*N) * (math.factorial(2*N - 1)) / \
+        (math.factorial(N - 1) * math.factorial(N + 1))
+    xi = (error / coefficient)**(1 / power) - 1
+    return xi
+
+
+def print_xi_factor(N):
+    for i in range(1, N + 1):
+        print( (1+find_xi(i))**(1/2 - i))
 
 
 if __name__ == '__main__':
-    plot_error(10)
+    tabulate_error(11)
+    #plot_error(10)
+    #print( find_xi(50) )
+    #print_xi_factor(90)
