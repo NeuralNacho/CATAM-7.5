@@ -71,14 +71,14 @@ The radius of convergence can be found via the ratio test.
 	& = \lim_{k \to \infty}\left| \frac{ (2k-1)(2k-2) }{ 4(k+1)(k-1) } \right| &&\\
 	& = 1
 \end{flalign*}
-This means that the Pad\'e approximant will only be useful within the disk of radius 1 \ 
+THIS MEANS that the Pad\'e APPROXIMANT will only be useful within the disk of radius 1 \ 
 centred at 0 in the complex plane. Also, the further from 0 you go, the more terms of \ 
 the power series are required for a precise result. Therefore, approximants with a \ 
 lower value of L+M+1 become much less useful in these cases.
 \\
 
 Taking $x = 1$ in the power series, we obtain $\sum_{k = 0}^{\infty}c_{k}$. Since this converges, the \
-sequence of partial sums $\sum_{k = 0}^{N}c_{k}$ converges. This convergence is illustrated in figure\ 
+sequence of partial sums $\sum_{k = 0}^{N}c_{k}$ converges. This convergence is illustrated in Figure\ 
 \ref{q1_fig1}.
 
 \vspace{0.3cm}
@@ -142,7 +142,7 @@ approximation of the error.
 
 We know $(1+\xi)^{-N + \frac{1}{2}}$ is relatively unchanged when $N$ is increased by $1$. Thus taking \
 the ratio of $R_{N}(1)$ and $R_{N+1}(1)$ shows that incrementing $N$ by $1$ decreases the error by \
-very close to $\frac{ 2N+1 }{ 2N+4 }$. Hence the larger N is, the less the percentage decrease of error \
+almost exactly $\frac{ 2N+1 }{ 2N+4 }$. Hence the larger N is, the less the percentage decrease of error \
 is for increasing N.
 
 
@@ -184,7 +184,7 @@ for different values of $L$.
 \end{minipage}
 \vspace{0.3cm}
 
-From figure \ref{q2_fig1}, we see that for $L \leq 10$, the error decreases exponentially.
+From Figure \ref{q2_fig1}, we see that for $L \leq 10$, the error decreases exponentially.
 We observe from the table that the minimum value of the error for $L \leq 15$ is 2.220446049250313e-16.\ 
 This must be true in general since this is exactly the machine precision, i.e. it is the  difference between 1.0 and\ 
 the smallest 64-bit double precision floating-point value larger than 1.0. Hence, the machine precision\ 
@@ -200,7 +200,7 @@ squares solution for the $q_{k}$ be $\mathbf{y}$. Then $\mathbf{b}-A\mathbf{y}$ 
 $A\mathbf{x}$ for any $\mathbf{x}$. Hence no more improvements can be made in this case either.
 \\
 
-In addition, the limit on the error is cased my the machine precision, not the solution to equation (4).\ 
+In addition, the limit on the error is caused my the machine precision, not the solution to equation (4).\ 
 Thus iterative improvement would have no effect on the minimum error.
 \\
 
@@ -214,7 +214,7 @@ faster rate than the error term from the power series expansion of $R_{L,L}(x)$.
 \\
 
 It is then clear that the Pad\'e approximant should be used as an estimate of $\sqrt{2}$ to specified accuracy\
-in all cases. The error estimation \ref{q1_eq2} shows that to have an error of $2.22\times10^{-16}$, which\ 
+in all cases. The error estimation (\ref{q1_eq2}) shows that to have an error of $2.22\times10^{-16}$, which\ 
 only requires $L=11$ for the Pad\'e approximant, you would need $N$ to be close to 100,000. Even if you wanted\ 
 more accuracy than this, that wouldn't be possible with 64-bit floats since $2.22\times10^{16}$ is the\ 
 machine precision.
@@ -248,46 +248,152 @@ machine precision.
 \end{minipage}
 \vspace{0.1cm}
 
-We can see from figure \ref{q3_N=3} that for $N=3$, the estimate increases at a rate of $x^{N}$.\ 
-This means it diverges from $f_{1}(x)$ and for larger $N$ the estimate diverges even more quickly. This is\ 
+We can see from Figure \ref{q3_N=3} that for $N=3$, the estimate increases at a rate of $x^{N}$.
+This means it diverges from $f_{1}(x)$ and for larger $N$ the estimate diverges even more quickly. This is
 because of the $x^{N}$ term in the power series which becomes very large for $x > 1$.
 \\
 
-In comparion, the diagonal Pad\'e approximant with $L=3$ stays much closer to $f_{1}(x)$ than the power series\ 
-estimate. This is due to the fact that the Pad\'e approximant is a fraction so its limiting behaviour as\ 
-$x \to \infty$ is much more similar to $f_{1}(x)$ than the power series' behaviour is. However, $L = 3$ does\ 
-not give a good estimate in the range $1 \leq x \leq 100$. We see that for $L = 10$ and $L = 50$, we obtain\ 
+In comparion, the diagonal Pad\'e approximant with $L=3$ stays much closer to $f_{1}(x)$ than the power series
+estimate. This is due to the fact that the Pad\'e approximant is a fraction so its limiting behaviour as 
+$x \to \infty$ is much more similar to $f_{1}(x)$ than the power series' behaviour is. However, $L = 3$ does 
+not give a good estimate in the range $1 \leq x \leq 100$. We see that for $L = 10$ and $L = 50$, we obtain
 much closer estimates while the power series would only diverge further.
 \\
 
 \begin{minipage}{\textwidth}\centering
 	\includegraphics[width=\linewidth]{q3_fig3}
-	\captionof{figure}{Plot $L$ against $\ln(error)$ for $x = 10$}
+	\captionof{figure}{Plot of $L$ against $\ln(Error)$ for $x = 10$}
 	\label{q3_fig3}
 \end{minipage}
 \vspace{1cm}
 
 \begin{minipage}{\textwidth}\centering
 	\includegraphics[width=\linewidth]{q3_fig4}
-	\captionof{figure}{Plot $L$ against $\ln(error)$ for $x = 100$}
+	\captionof{figure}{Plot of $L$ against $\ln(Error)$ for $x = 100$}
 	\label{q3_fig4}
 \end{minipage}
 \vspace{1cm}
 
-- Exponential decrease up to L = 10
+From Figures \ref{q3_fig3} and \ref{q3_fig4}, we see that the error decreases exponentially for $L \leq 11$
+since the graphs are linear for this range of $L$. Beyond this range, the error remains in the same area as 
+it increases and decreases in a zig-zag pattern. The reason the error stops decreasing exponentially is that
+the Pad\'e approximant calculated by Program A is not accurate for large $L$ (i.e. the $q_{k}$ and $p_{k}$ 
+calculated are slighly off). I know that the approximant is inacurate since it should give the same result 
+as the $(2L)^{\text{th}}$ continued fraction from:
+\begin{flalign*}
+	\sqrt{1+x} &= 1 + \frac{ x }{ 1 + \sqrt{1+x} } && \\
+	\implies \sqrt{1+x} &= 1 + \frac{ x }{ 2 + \frac{ x }{ 2 + \frac{ x }{ 2 + ...}}} &&
+\end{flalign*}
 
-- Same value of L as for x = 1. WHY?
-
-- Apprears to be (can't be certain since haven't/can't test higher L) limit to minimum error. WHY?
-
-- Around this minimimum value we get distinctive zig-zaggin. WHY ZIG-ZAGGING?
+Truncating this fraction after the $(2L)^{\text{th}}$ two and simplifying, we obain the diagonal Pad\'e 
+approximant. The program \texttt{continued\textunderscore fraction.py} on page \pageref{continued_fraction} 
+demonstrates that the results of Program A and what the approximant should be (using the continued fraction) 
+are different; using $L = 15$ as an example, the error from the Pad\'e approximant is $5.03\times 10^{-6}$
+while the error should be $2.77\times 10^{-8}$. This must be due to the limitations of the 64-bit float 
+arithmetic used for Program A and hence explains why the error stops decreasing as $L$ is increased.
 \\
+%Notice that this is the same range for which the error
+%decreased expnentially in Question 2 but in that case the error at $L = 11$ was the machine precision. 
+% THIS IS JUST A COOINCIDENCE
+
+% We can expect this to continue for larger $L$, meaning that we cannot expect the error to be any smaller than
+% it is for $L = 14$ which is where we see a minimum on both graphs. 
+
+% THE REASON FOR THE INACCURACY IS THAT THE PADE APPROXIMANT IS JUST WRONG. FOR EXAMPLE, THE CONTINUED FRACTION
+% WHICH SIMPLIFIES INTO THE PADE APPROXIMANT GIVES THE CORRECT SOLUTION. KNOW WHAT THE CORRECT SOLUTION
+% IS BECAUSE WOLFRAM ALPHA GIVES IT EXACTLY (ALTHOUGH HERE HAVE TO SAY I KNOW IT FROM CONTINUED FRACTION
+% BUT WOLFRAM AND CONTINUED FRACTION GIVE THE SAME RESULT SO I KNOW CONTINUED FRACTION IS CORRECT)
 
 Overall, we can see that the Pad\'e approximant almost converges to $f_{1}(x)$ for large $x$ despite\ 
 the fact that this is outside the radius of convergence of the power series. However, there is a\ 
 limitation on the accuracy of the estimate you can get where increasing the value of $L$ will not\ 
 improve the result.
 % ONE MORE IMPLICATION
+
+
+\subsubsection*{Question 4}
+
+I first present some graphs which give the error for different L using a diagonal approximant and
+the error for different orders using the power series. This is so that the optimal such L and order
+can be found for calculation across the whole range $0 \leq x \leq 20$.
+
+\begin{minipage}{\textwidth}
+	\centering
+	\includegraphics[width=0.49\linewidth]{q4_series_x=0.1}
+	\includegraphics[width=0.49\linewidth]{q4_series_x=1}
+	\includegraphics[width=0.5\linewidth]{q4_series_x=20}
+	\captionof{figure}{Plots of power series order against $\ln(Error)$ for $x = 0.1, 1$ and $20$}
+	\label{q4_series_change}
+\end{minipage}
+\vspace{0.5cm}
+
+\begin{minipage}{\textwidth}
+	\centering
+	\includegraphics[width=0.49\linewidth]{q4_approx_x=0.1}
+	\includegraphics[width=0.49\linewidth]{q4_approx_x=1}
+	\includegraphics[width=0.5\linewidth]{q4_approx_x=20}
+	\captionof{figure}{Plots of $L$ against $\ln(Error)$ for $x = 0.1, 1$ and $20$}
+	\label{q4_approx_change}
+\end{minipage}
+\vspace{0.5cm}
+
+From Figure \ref{q4_series_change} we can see that for large $x \geq 1$ the error of the power series
+estimates diverges exponentially so the power series is not useful for any order here. On the other
+hand, the graph with $x = 0.1$ demonstrates that the series gives a good estimate for much smaller x
+as the $x^{n}$ terms do not diverge. In particular, the order of $9$ gives the minimum error.
+\\
+
+Figure \ref{q4_approx_change} shows that the Pad\'e approximant can give a relatively small error
+for different values of $x$ in the range $[0, 20]$. The minimum error is given by either $L = 6$ or
+$L = 7$ and taking the diagonal approximant.
+\\
+
+\begin{minipage}{0.45\textwidth}
+	\centering
+	\includegraphics[width=\linewidth]{q4_series_order=1}
+	\captionof{figure}{Error from the order 1 power series}
+	\label{q4_series_o1}
+\end{minipage}
+\hspace{0.9cm}
+\begin{minipage}{0.45\textwidth}
+	\centering
+	\includegraphics[width=\linewidth]{q4_series_order=9}
+	\captionof{figure}{Error from the order 9 power series}
+	\label{q4_series_o2}
+\end{minipage}
+\vspace{0.5cm}
+
+\begin{minipage}{0.45\textwidth}
+	\centering
+	\includegraphics[width=\linewidth]{q4_approx_L=7}
+	\captionof{figure}{Error of Pad\'e approximant with $L = 7$ in range the [0,20]}
+	\label{q4_approx_L=7}
+\end{minipage}
+\hspace{0.9cm}
+\begin{minipage}{0.48\textwidth}
+	\centering
+	\includegraphics[width=\linewidth]{q4_approx_zoomed}
+	\captionof{figure}{Error of Pad\'e approximant with $L = 7$ zoomed in on the range [0,1]}
+	\label{q4_approx_zoomed}
+\end{minipage}
+\vspace{0.5cm}
+
+Since the power series diverges for larger $x$, only the Pad\'e approximant is a good basis
+for calculating $f_{2}(x)$ in the range $0 \leq x \leq 20$. Figure \ref{q4_approx_L=7} shows
+that the error remains small up to $x=20$. In the range $0 \leq x \leq 1$, the Pad\'e approximant
+approximant also gives far more accurate calculations than the power series comparing Figures
+\ref{q4_series_o1}, \ref{q4_series_o2} and \ref{q4_approx_zoomed}. In addition, while the order 9
+power series gives a small error for $x = 0.1$, this quickly diverges.
+\\
+
+The reason that the Pad\'e approximant is more accurate than the truncated power series is similar
+to the reasoning for $f_{1}(x)$; the limiting behaviour is better because the approximant 
+is a fracion and for small $x$ the power series expansion of the Pad\'e approximant is better
+than the truncated power series with the matching first $L + M + 1$ terms.
+
+\subsubsection*{Question 5}
+
+
 
 
 
@@ -304,6 +410,26 @@ improve the result.
 \pagebreak
 \textbf{Question\textunderscore 1.py for Question 1}\centering\label{Question_1}
 \lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_1.py}
+\vspace{2cm}
+
+\pagebreak
+\textbf{Question\textunderscore 1.py for Question 2}\centering\label{Question_2}
+\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_2.py}
+\vspace{2cm}
+
+\pagebreak
+\textbf{Question\textunderscore 2.py for Question 3}\centering\label{Question_3}
+\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_3.py}
+\vspace{2cm}
+
+\pagebreak
+\textbf{continued\textunderscore fraction.py for Question 3}\centering\label{continued_fraction}
+\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/continued_fraction.py}
+\vspace{2cm}
+
+\pagebreak
+\textbf{Question\textunderscore 4.py for Question 4}\centering\label{Question_4}
+\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_4.py}
 \vspace{2cm}
 
 

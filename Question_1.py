@@ -3,6 +3,15 @@ import math
 import matplotlib.pyplot as plt
 
 
+def odd_product(last_int):
+    product = 1
+    next_int = 1
+    while next_int <= last_int:
+        product *= next_int
+        next_int += 2
+    return product
+
+
 def find_coefficient(k):
     if k == 0:
         return 1
@@ -12,6 +21,12 @@ def find_coefficient(k):
     denominator = 2**(2*k - 2) * math.factorial(k) * \
                         math.factorial(k-2)
     return numerator / denominator
+
+    # numerator = (-1)**(k-1) * odd_product(2*k - 3)
+    # denominator = 2**k * math.factorial(k)
+    # return numerator / denominator
+
+
 
 
 def find_partial_sum(N):

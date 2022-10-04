@@ -69,12 +69,16 @@ class approximant_investigation:
         plt.rc('font', size = 32)
         plt.grid(linestyle = '--', linewidth = 0.5)
 
-        L_vector = np.arange(0, 151, 1)
+        L_vector = np.arange(0, 21, 1)
         # Can't have L too large or error with x**k at some 
         # point
-        vfunc = np.vectorize(diagonal_approximant)
-        approximant_vector = vfunc(L_vector, x)
-        error_vector = approximant_vector - f_1(x)
+        approximant_vector = []
+        for i in range(len(L_vector)):
+            approximant_vector.append(
+                            diagonal_approximant(i, x))
+        approximant_vector = np.array(approximant_vector)
+        error_vector = f_1(x) - approximant_vector
+        print(error_vector)
         log_error = np.log(np.absolute(error_vector))
         plt.plot(L_vector, log_error, color = 'C3')
 
@@ -94,7 +98,7 @@ class approximant_investigation:
 if __name__ == '__main__':
     # plot_comparison(3, 50) # N, L, fig_index
 
-    pade_test = approximant_investigation(2, 100)
+    pade_test = approximant_investigation(10, 100)
     pade_test.display_graphs()
 
     

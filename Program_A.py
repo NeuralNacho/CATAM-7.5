@@ -24,7 +24,9 @@ class approximator:
         # This vector is multiplied by the matrix
         c_target = np.negative(self.c_vector[self.L + 1 : 
                                     self.L + self.M + 1])
+        c_target = np.array(c_target, dtype=np.float64)
         # This is the product of the vector and matrix
+        # We make sure the dtype is float64
 
         rows = []
 
@@ -42,12 +44,13 @@ class approximator:
                 row = np.append(row, additional_zeros)
             rows.append(row)
         
-        c_matrix = np.vstack(rows)
+        c_matrix = np.array(np.vstack(rows), 
+                            dtype=np.float64)
         # print(c_matrix)
         # print(np.linalg.det(c_matrix))
 
         q_vector = np.linalg.lstsq(c_matrix, c_target, 
-                                        rcond = None)[0]
+                                       rcond = None)[0]
         # Need 0 index of result from lstsq function
 
         # NOTE: q_vector starts from q_1 unlike p_vector

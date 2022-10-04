@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2022.9.9)  14 SEP 2022 01:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2022.9.9)  4 OCT 2022 22:19
 entering extended mode
 **"c:/Users/angus/OneDrive/Documents/CATAM 7.5/Project Write-up/CATAM 7.5.tex"
 (c:/Users/angus/OneDrive/Documents/CATAM 7.5/Project Write-up/CATAM 7.5.tex
@@ -391,54 +391,131 @@ Underfull \hbox (badness 10000) in paragraph at lines 256--262
 
  []
 
-<q3_fig3.png, id=40, 1008.76875pt x 505.13719pt>
+<q3_fig3.png, id=40, 1035.87pt x 511.15968pt>
 File: q3_fig3.png Graphic file (type png)
 <use q3_fig3.png>
 Package pdftex.def Info: q3_fig3.png  used on input line 264.
-(pdftex.def)             Requested size: 440.84746pt x 220.75032pt.
-<q3_fig4.png, id=41, 1132.98282pt x 509.65407pt>
+(pdftex.def)             Requested size: 440.84746pt x 217.54027pt.
+<q3_fig4.png, id=41, 1000.48781pt x 493.845pt>
 File: q3_fig4.png Graphic file (type png)
 <use q3_fig4.png>
 Package pdftex.def Info: q3_fig4.png  used on input line 271.
-(pdftex.def)             Requested size: 440.84746pt x 198.30545pt.
+(pdftex.def)             Requested size: 440.84746pt x 217.60141pt.
 [5 <./q3_L=10.png> <./q3_L=50.png> <./q3_fig3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 283--285
+Underfull \hbox (badness 10000) in paragraph at lines 288--298
 
  []
 
-[6 <./q3_fig4.png>] (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+<q4_series_x=0.1.png, id=48, 647.41875pt x 490.83376pt>
+File: q4_series_x=0.1.png Graphic file (type png)
+<use q4_series_x=0.1.png>
+Package pdftex.def Info: q4_series_x=0.1.png  used on input line 322.
+(pdftex.def)             Requested size: 216.01767pt x 163.77312pt.
+<q4_series_x=1.png, id=49, 655.69969pt x 504.38437pt>
+File: q4_series_x=1.png Graphic file (type png)
+<use q4_series_x=1.png>
+Package pdftex.def Info: q4_series_x=1.png  used on input line 323.
+(pdftex.def)             Requested size: 216.01767pt x 166.16258pt.
+<q4_series_x=20.png, id=50, 665.48625pt x 506.6428pt>
+File: q4_series_x=20.png Graphic file (type png)
+<use q4_series_x=20.png>
+Package pdftex.def Info: q4_series_x=20.png  used on input line 324.
+(pdftex.def)             Requested size: 220.42372pt x 167.8111pt.
+[6 <./q3_fig4.png>]
+<q4_approx_x=0.1.png, id=57, 317.68687pt x 229.60782pt>
+File: q4_approx_x=0.1.png Graphic file (type png)
+<use q4_approx_x=0.1.png>
+Package pdftex.def Info: q4_approx_x=0.1.png  used on input line 332.
+(pdftex.def)             Requested size: 216.01767pt x 156.13124pt.
+<q4_approx_x=1.png, id=58, 385.44pt x 271.0125pt>
+File: q4_approx_x=1.png Graphic file (type png)
+<use q4_approx_x=1.png>
+Package pdftex.def Info: q4_approx_x=1.png  used on input line 333.
+(pdftex.def)             Requested size: 216.01767pt x 151.88588pt.
+<q4_approx_x=20.png, id=59, 383.93437pt x 286.06876pt>
+File: q4_approx_x=20.png Graphic file (type png)
+<use q4_approx_x=20.png>
+Package pdftex.def Info: q4_approx_x=20.png  used on input line 334.
+(pdftex.def)             Requested size: 220.42372pt x 164.23944pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 340--345
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 346--350
+
+ []
+
+[7 <./q4_series_x=0.1.png> <./q4_series_x=1.png> <./q4_series_x=20.png> <./q4_approx_x=0.1.png> <./q4_approx_x=1.png> <./q4_approx_x=20.png>]
+<q4_series_order=1.png, id=69, 440.39531pt x 316.93407pt>
+File: q4_series_order=1.png Graphic file (type png)
+<use q4_series_order=1.png>
+Package pdftex.def Info: q4_series_order=1.png  used on input line 353.
+(pdftex.def)             Requested size: 198.38pt x 142.76408pt.
+<q4_series_order=9.png, id=70, 443.40656pt x 317.68687pt>
+File: q4_series_order=9.png Graphic file (type png)
+<use q4_series_order=9.png>
+Package pdftex.def Info: q4_series_order=9.png  used on input line 360.
+(pdftex.def)             Requested size: 198.38pt x 142.13368pt.
+<q4_approx_L=7.png, id=71, 441.90094pt x 318.43968pt>
+File: q4_approx_L=7.png Graphic file (type png)
+<use q4_approx_L=7.png>
+Package pdftex.def Info: q4_approx_L=7.png  used on input line 368.
+(pdftex.def)             Requested size: 198.38pt x 142.95639pt.
+<q4_approx_zoomed.png, id=72, 440.39531pt x 317.68687pt>
+File: q4_approx_zoomed.png Graphic file (type png)
+<use q4_approx_zoomed.png>
+Package pdftex.def Info: q4_approx_zoomed.png  used on input line 375.
+(pdftex.def)             Requested size: 211.60489pt x 152.64308pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 381--388
+
+ []
+
+[8 <./q4_series_order=1.png> <./q4_series_order=9.png> <./q4_approx_L=7.png> <./q4_approx_zoomed.png>] (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Program_A.py
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 35.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 37.
  (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
 File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 35.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 38.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 37.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 40.
  (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
 File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 38.
- [7]
-Overfull \hbox (73.80165pt too wide) in paragraph at lines 103--104
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
+ [9]
+Overfull \hbox (73.80165pt too wide) in paragraph at lines 106--107
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[8]) [9] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Program_B.py) [10] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_1.py [11]) [12] (CATAM 7.5.aux) ) 
+[10]) [11] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Program_B.py) [12] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_1.py [13] [14]) [15] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_2.py [16]) [17] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_3.py [18]) [19] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/continued_fraction.py
+Overfull \hbox (3.30177pt too wide) in paragraph at lines 43--45
+[][][][][][][][][][][][][][][][] 
+ []
+
+) [20] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_4.py [21]
+Overfull \hbox (3.30177pt too wide) in paragraph at lines 77--78
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[22]) [23] (CATAM 7.5.aux) ) 
 Here is how much of TeX's memory you used:
- 7435 strings out of 475413
- 116399 string characters out of 2777672
- 689753 words of memory out of 3000000
- 28722 multiletter control sequences out of 15000+600000
+ 7628 strings out of 475413
+ 121079 string characters out of 2777672
+ 701569 words of memory out of 3000000
+ 28900 multiletter control sequences out of 15000+600000
  478816 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,10n,63p,305b,1802s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\angus\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\angus\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "CATAM 7.5.pdf" (13 pages, 696811 bytes).
+ <C:\Users\angus\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\angus\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "CATAM 7.5.pdf" (24 pages, 1010005 bytes).
 PDF statistics:
- 131 PDF objects out of 1000 (max. 8388607)
+ 191 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 46 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 
