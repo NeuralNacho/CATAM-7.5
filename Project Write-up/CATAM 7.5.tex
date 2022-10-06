@@ -55,6 +55,9 @@ accuracy via polynomial division of the results.
 
 \subsubsection*{Question 1}
 
+NEED TO TAKE M = L + 1 SOMEWHERE IN THIS PROJECT. IN QUESTION 4? - WHAT IS THE DETERMINANT IN PROGRAM A HERE?
+- COULD IT AFFECT ERROR IN QUESTION 3?
+
 Using the binomial expansion, we obtain,
 \begin{flalign*}
 	f_{1}(x) = 1 + \frac{x}{2} - \frac{x^{2}}{8} + \frac{x^{3}}{16} &&
@@ -393,8 +396,113 @@ than the truncated power series with the matching first $L + M + 1$ terms.
 
 \subsubsection*{Question 5}
 
+I will display the values of $x$ at the poles and zeros of the Pad\'e approximant of $f_{1}(x)$ for 
+selected $L$.\\
+\underline{Poles}\\
+$L = 1: ~~~ x \approx -4$\\
+$L = 3: ~~~ x \approx -20.196, -2.572, -1.232$\\
+$L = 10: ~~ x \approx -179.079, -20.197,~....., -1.095, -1.023$\\
+\underline{Zeros}\\
+$L = 1: ~~~ x \approx -1.333$\\ 
+$L = 3: ~~~ x \approx -5.312, -1.636, -1.052$\\
+$L = 10: ~~ x \approx -45.021, -11.511,~.....,  -1.052, -1.006$
+\\
 
+All poles and zeros are real. Additionally, there are exactly $L$ poles and zeros for $R_{L,L}(x)$ meaning
+that there is one more pole and zero when $L$ is increased by one. All poles and zeros are negative, with
+the least negative values approaching 1 as $L$ is increased. Meanwhile, the largest negative increases as
+$L$ is increased and the remaining poles/zeros lie between this value and 1.
+\\ 
+ALSO ANOMALOUS POLES and ZEROS NON-REAL FOR LARGE L
+\\
 
+The Pad\'e approximant of $f_{3}(x)$ is the inverse of the Pad\'e approximant of $f_{1}(x)$. Therefore, the
+poles of this approximant are the zeros of the approximant of $f_{1}(x)$ and vice versa. Hence the results
+above can be used to describe their behaviour.
+\\
+
+We have the following results for $f_{4}(x)$.
+% \underline{Poles}\\
+% $L = 1: ~~~ x \approx -4$\\
+% $L = 3: ~~~ x \approx -20.196, -2.572, -1.232$\\
+% $L = 10: ~~ x \approx -179.079, -20.197,~....., -1.095, -1.023$
+
+\vspace{0.3cm}
+\begin{minipage}{\textwidth}
+	\includegraphics[width=\linewidth]{q5_fig1_poles}
+	\captionof{figure}{Scatter graph showing poles of $R_{L,L}(x)$}
+	\label{q5_fig1_poles}
+\end{minipage}
+\vspace{0.1cm}
+
+\vspace{0.3cm}
+\begin{minipage}{\textwidth}
+	\includegraphics[width=\linewidth]{q5_fig1_zeros}
+	\captionof{figure}{Scatter graph showing zeros of $R_{L,L}(x)$}
+	\label{q5_fig1_zeros}
+\end{minipage}
+\vspace{0.1cm}
+
+From Figures \ref{q5_fig1_poles} and \ref{q5_fig1_zeros}, we notice that there are mostly complex roots
+in conjugate pairs with the magnitude increasing as $L$ increases. There are no real poles or zeros for 
+$L = 2, 4 \text{ or } 6$ however there is exactly one for all odd $L$ excluding 1, and exactly two for
+the remaining even $L\geq 8$.
+\\
+
+We can obtain similar graphs for $f_{5}(x)$. The number of real poles and zeros remains the same as above
+apart from the fact that there are two real poles for $L = 4$ and $L = 6$. When there are real poles, 
+there is always one very close to -1 and for even values of $L$ there is an additional positive real pole. 
+For instance, for $L = 14$ there are poles -1.00 and 1.48. As $L$ increases above 10, additional poles 
+and zeros are within a distance of 2 to the origin.
+\\
+
+For $f_{6}(x)$, there is a real pole for $L\geq 2 $ with increasingly large magnitute. For example, for 
+$L = 9$ there is a pole at $x=7390.11$ and for $L=10$ there is one at $x=-22133$. This large real pole 
+alternated between positive and negative values for odd and even values of $L$ respectively and seems
+to increase in magnitude by a factor of approximately 3 each time $L$ is increased. There is a second
+real pole for even $L$ which is just less than -2. The remaining poles tend towards 
+$-\frac{1}{2} \pm \frac{\sqrt{3}}{2}$ as outline in Figure \ref{q5_fig2}.\\
+\vspace{0.3cm}
+\begin{minipage}{\textwidth}
+	\centering
+	\includegraphics[width=0.6\linewidth]{q5_fig2}
+	\captionof{figure}{Graph showing poles of $f_{6}$}
+	\label{q5_fig2}
+\end{minipage}
+\vspace{0.1cm}
+
+The zeros of $f_{6}(x)$ are positioned in an identical fashion to Figure \ref{q5_fig2} with an increasing 
+number of roots approaching $-\frac{1}{2} \pm \frac{\sqrt{3}}{2}$.
+\\
+
+The least negative poles and zeros of the approximants of $f_{1}(x)$ and $f_{3}(x)$ tending to -1 corresponds
+to a branch point of both functions at $x=-1$. The remaining poles and zeros can be 
+considered to be lying on a branch cut along the negative real axis. PLOT or table
+\\
+
+$f_{4}(x)$ has no zeros, poles or branch points so there is no correspondence with the approximants.
+$f_{5}(x)$ has a pole at $z = -1$ which corresponds to the real poles we find very close to -1 in the
+approximants. Table \ref{table_1} demonstrates this in more detail. TABLE
+\begin{table}[htb]
+	\renewcommand{\arraystretch}{1.7}  % Stops rows being so close together
+	\begin{tabular}{c|c|c|c|c|c|c|}
+		\cline{2-7}
+		& ~~\_\space\space\space & ~~R~~ & ~RE\space\space & ~REA\space\space & REAC\space & REACT \\\hline
+		\multicolumn{1}{|c|}{\_} & 0  & 1 & 2  & 3   & 4    & 5     \\ \hline
+		\multicolumn{1}{|c|}{C}   & 1  & 1 & 2  & 3   & 3    & 4     \\ \hline
+		\multicolumn{1}{|c|}{CA}   & 2  & 2 & 2  & 2   & 3    & 4     \\ \hline
+		\multicolumn{1}{|c|}{CAT} & 3  & 3 & 3  & 3   & 3    & 3     \\ \hline
+	\end{tabular}
+	\label{table_1}
+\end{table}
+\\
+
+We find that $-\frac{1}{2} \pm \frac{\sqrt{3}}{2}$ are zeros and branch points of $f_{6}(x)$ which
+explains why the zeros approach these values. $\infty$ is the third and final branch point so any branch
+cut requires two segments. Thus the poles lying along the real axis can be considered to be lying along
+a segment of a branch cut which goes from one of the finite branch points and to $\infty$ along the real 
+axis.
+% (Figure 16 already presented above helps to highlight this)
 
 
 \pagebreak

@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1664918897 "c:/Users/angus/OneDrive/Documents/CATAM 7.5/Project Write-up/CATAM 7.5.tex" "CATAM 7.5.pdf" "CATAM 7.5" 1664918903
+["pdflatex"] 1665008316 "c:/Users/angus/OneDrive/Documents/CATAM 7.5/Project Write-up/CATAM 7.5.tex" "CATAM 7.5.pdf" "CATAM 7.5" 1665008322
   "C:/Users/angus/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1662568941 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/angus/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1662583485 14064 de64baeaca439e977b27f06a6d562843 ""
   "C:/Users/angus/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcti1200.pk" 1662583484 17172 e498ee550350e2be926191d3e4dff874 ""
@@ -92,9 +92,9 @@
   "C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_3.py" 1663162937 3002 946485f80799b34049dd8b5c12c8ba03 ""
   "C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_4.py" 1664918195 5466 a961b67a5cab9b7161cd153fe05babcf ""
   "C:/Users/angus/OneDrive/Documents/CATAM 7.5/continued_fraction.py" 1663169379 1360 660f1e093386f6c2ffe564aefd4e70b2 ""
-  "CATAM 7.5.aux" 1664918903 4037 3a6044c0adfa3093bb843fb0ab455662 "pdflatex"
-  "CATAM 7.5.tex" 1664918347 20090 bae21f4f1169de5d03a91c77feb4b0c7 ""
-  "c:/Users/angus/OneDrive/Documents/CATAM 7.5/Project Write-up/CATAM 7.5.tex" 1664918347 20090 bae21f4f1169de5d03a91c77feb4b0c7 ""
+  "CATAM 7.5.aux" 1665008322 4724 234577b801ca5fdeef284a7b0e1d623d "pdflatex"
+  "CATAM 7.5.tex" 1665008310 25562 4e7ea65d28609853079fe391f4c713b7 ""
+  "c:/Users/angus/OneDrive/Documents/CATAM 7.5/Project Write-up/CATAM 7.5.tex" 1665008310 25562 4e7ea65d28609853079fe391f4c713b7 ""
   "q1_fig1.png" 1662852986 62371 e90b30dd974ce7d2bd77a798842045c8 ""
   "q1_fig2.png" 1662993380 105833 f5c59faa941fc23c09ced91df5b421ef ""
   "q2_fig1.png" 1663014738 76649 95b3eaf1a95b4367ffe4c90f7bd91f08 ""
@@ -114,6 +114,9 @@
   "q4_series_x=0.1.png" 1663200174 48174 fd84a4eb9df7668a4d1d5bd3d112bb47 ""
   "q4_series_x=1.png" 1663200217 48564 04dd7db098a217f9bfb87e2cdfa0a1bb ""
   "q4_series_x=20.png" 1663200255 52014 9b59efa191888ea152e45ff34381daf5 ""
+  "q5_fig1_poles.png" 1664997507 49785 7bb9b746bcd2601e6f3cb67b0fdf88a8 ""
+  "q5_fig1_zeros.png" 1664997584 49691 944680957cd9926f8d6b9b65e1975264 ""
+  "q5_fig2.png" 1665001430 39500 b783b2e7246a0aecde3561ff7fbf90a9 ""
   (generated)
   "CATAM 7.5.aux"
   "CATAM 7.5.log"

@@ -14,6 +14,5 @@ print(math.sqrt(11) - f(10))
 a = [1, 2, 3, 4]
 print(a[:2]) """
 
-print(np.roots([1, 0, -1, 3, -7]))
-
-print(0 in [0+0j])
+a =1+0j
+print(a.imag == 0)
