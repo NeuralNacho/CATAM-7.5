@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2022.9.9)  7 OCT 2022 00:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2022.9.9)  26 MAR 2023 13:49
 entering extended mode
 **"c:/Users/angus/OneDrive/Documents/CATAM 7.5/Project Write-up/CATAM 7.5.tex"
 (c:/Users/angus/OneDrive/Documents/CATAM 7.5/Project Write-up/CATAM 7.5.tex
@@ -220,3 +220,421 @@ Package bm Info: No bold for \U/msa/m/n, using \pmb.
 Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
 ) (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-08-30 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count288
+\l__pdf_internal_box=\box59
+) (CATAM 7.5.aux)
+\openout1 = `"CATAM 7.5.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+ (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count289
+\scratchdimen=\dimen180
+\scratchbox=\box60
+\nofMPsegments=\count290
+\nofMParguments=\count291
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count292
+\MPscratchDim=\dimen181
+\MPnumerator=\count293
+\makeMPintoPDFobject=\count294
+\everyMPtoPDFconversion=\toks34
+) (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: legalpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(86.72377pt, 440.84746pt, 86.72377pt)
+* v-part:(T,H,B)=(86.72377pt, 838.33246pt, 86.72377pt)
+* \paperwidth=614.295pt
+* \paperheight=1011.78pt
+* \textwidth=440.84746pt
+* \textheight=838.33246pt
+* \oddsidemargin=14.45378pt
+* \evensidemargin=14.45378pt
+* \topmargin=-22.54622pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@lstlisting=\count295
+[1
+
+{C:/Users/angus/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
+ (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
+ (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+Underfull \hbox (badness 10000) in paragraph at lines 76--82
+
+ []
+
+<q1_fig1.png, id=6, 891.33pt x 644.4075pt>
+File: q1_fig1.png Graphic file (type png)
+<use q1_fig1.png>
+Package pdftex.def Info: q1_fig1.png  used on input line 89.
+(pdftex.def)             Requested size: 440.84746pt x 318.72212pt.
+[1]
+Underfull \hbox (badness 10000) in paragraph at lines 95--97
+
+ []
+
+
+Overfull \hbox (9.8266pt too wide) detected at line 130
+[]
+ []
+
+[2 <./q1_fig1.png>]
+<q1_fig2.png, id=24, 1274.51157pt x 645.16031pt>
+File: q1_fig2.png Graphic file (type png)
+<use q1_fig2.png>
+Package pdftex.def Info: q1_fig2.png  used on input line 140.
+(pdftex.def)             Requested size: 440.84746pt x 223.1515pt.
+<q2_fig1.png, id=25, 1246.6575pt x 647.41875pt>
+File: q2_fig1.png Graphic file (type png)
+<use q2_fig1.png>
+Package pdftex.def Info: q2_fig1.png  used on input line 184.
+(pdftex.def)             Requested size: 440.84746pt x 228.94122pt.
+ [3 <./q1_fig2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 190--196
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--205
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--209
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--218
+
+ []
+
+<q3_N=3.png, id=30, 886.06032pt x 510.40688pt>
+File: q3_N=3.png Graphic file (type png)
+<use q3_N=3.png>
+Package pdftex.def Info: q3_N=3.png  used on input line 229.
+(pdftex.def)             Requested size: 440.84746pt x 253.94891pt.
+[4 <./q2_fig1.png>]
+<q3_L=3.png, id=35, 1209.76968pt x 642.90187pt>
+File: q3_L=3.png Graphic file (type png)
+<use q3_L=3.png>
+Package pdftex.def Info: q3_L=3.png  used on input line 236.
+(pdftex.def)             Requested size: 352.6793pt x 187.41776pt.
+<q3_L=10.png, id=36, 1209.01688pt x 642.90187pt>
+File: q3_L=10.png Graphic file (type png)
+<use q3_L=10.png>
+Package pdftex.def Info: q3_L=10.png  used on input line 242.
+(pdftex.def)             Requested size: 352.6793pt x 187.53548pt.
+<q3_L=50.png, id=37, 1209.01688pt x 642.14906pt>
+File: q3_L=50.png Graphic file (type png)
+<use q3_L=50.png>
+Package pdftex.def Info: q3_L=50.png  used on input line 248.
+(pdftex.def)             Requested size: 352.6793pt x 187.31587pt.
+ [5 <./q3_N=3.png> <./q3_L=3.png> <./q3_L=10.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 254--258
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--265
+
+ []
+
+<q3_fig3.png, id=44, 1035.87pt x 511.15968pt>
+File: q3_fig3.png Graphic file (type png)
+<use q3_fig3.png>
+Package pdftex.def Info: q3_fig3.png  used on input line 267.
+(pdftex.def)             Requested size: 440.84746pt x 217.54027pt.
+<q3_fig4.png, id=45, 1000.48781pt x 493.845pt>
+File: q3_fig4.png Graphic file (type png)
+<use q3_fig4.png>
+Package pdftex.def Info: q3_fig4.png  used on input line 274.
+(pdftex.def)             Requested size: 440.84746pt x 217.60141pt.
+[6 <./q3_L=50.png> <./q3_fig3.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 291--301
+
+ []
+
+<q4_series_x=0.1.png, id=52, 647.41875pt x 490.83376pt>
+File: q4_series_x=0.1.png Graphic file (type png)
+<use q4_series_x=0.1.png>
+Package pdftex.def Info: q4_series_x=0.1.png  used on input line 325.
+(pdftex.def)             Requested size: 216.01767pt x 163.77312pt.
+<q4_series_x=1.png, id=53, 655.69969pt x 504.38437pt>
+File: q4_series_x=1.png Graphic file (type png)
+<use q4_series_x=1.png>
+Package pdftex.def Info: q4_series_x=1.png  used on input line 326.
+(pdftex.def)             Requested size: 216.01767pt x 166.16258pt.
+<q4_series_x=20.png, id=54, 665.48625pt x 506.6428pt>
+File: q4_series_x=20.png Graphic file (type png)
+<use q4_series_x=20.png>
+Package pdftex.def Info: q4_series_x=20.png  used on input line 327.
+(pdftex.def)             Requested size: 220.42372pt x 167.8111pt.
+[7 <./q3_fig4.png>]
+<q4_approx_x=0.1.png, id=60, 317.68687pt x 229.60782pt>
+File: q4_approx_x=0.1.png Graphic file (type png)
+<use q4_approx_x=0.1.png>
+Package pdftex.def Info: q4_approx_x=0.1.png  used on input line 335.
+(pdftex.def)             Requested size: 216.01767pt x 156.13124pt.
+<q4_approx_x=1.png, id=61, 385.44pt x 271.0125pt>
+File: q4_approx_x=1.png Graphic file (type png)
+<use q4_approx_x=1.png>
+Package pdftex.def Info: q4_approx_x=1.png  used on input line 336.
+(pdftex.def)             Requested size: 216.01767pt x 151.88588pt.
+<q4_approx_x=20.png, id=62, 383.93437pt x 286.06876pt>
+File: q4_approx_x=20.png Graphic file (type png)
+<use q4_approx_x=20.png>
+Package pdftex.def Info: q4_approx_x=20.png  used on input line 337.
+(pdftex.def)             Requested size: 220.42372pt x 164.23944pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 343--348
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--353
+
+ []
+
+[8 <./q4_series_x=0.1.png> <./q4_series_x=1.png> <./q4_series_x=20.png> <./q4_approx_x=0.1.png> <./q4_approx_x=1.png> <./q4_approx_x=20.png>]
+<q4_series_order=1.png, id=72, 440.39531pt x 316.93407pt>
+File: q4_series_order=1.png Graphic file (type png)
+<use q4_series_order=1.png>
+Package pdftex.def Info: q4_series_order=1.png  used on input line 356.
+(pdftex.def)             Requested size: 198.38pt x 142.76408pt.
+<q4_series_order=9.png, id=73, 443.40656pt x 317.68687pt>
+File: q4_series_order=9.png Graphic file (type png)
+<use q4_series_order=9.png>
+Package pdftex.def Info: q4_series_order=9.png  used on input line 363.
+(pdftex.def)             Requested size: 198.38pt x 142.13368pt.
+<q4_approx_L=7.png, id=74, 441.90094pt x 318.43968pt>
+File: q4_approx_L=7.png Graphic file (type png)
+<use q4_approx_L=7.png>
+Package pdftex.def Info: q4_approx_L=7.png  used on input line 371.
+(pdftex.def)             Requested size: 198.38pt x 142.95639pt.
+<q4_approx_zoomed.png, id=75, 440.39531pt x 317.68687pt>
+File: q4_approx_zoomed.png Graphic file (type png)
+<use q4_approx_zoomed.png>
+Package pdftex.def Info: q4_approx_zoomed.png  used on input line 378.
+(pdftex.def)             Requested size: 211.60489pt x 152.64308pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 384--391
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--411
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 412--417
+
+ []
+
+[9 <./q4_series_order=1.png> <./q4_series_order=9.png> <./q4_approx_L=7.png> <./q4_approx_zoomed.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 418--422
+
+ []
+
+<q5_fig1_poles.png, id=83, 1115.66812pt x 561.59813pt>
+File: q5_fig1_poles.png Graphic file (type png)
+<use q5_fig1_poles.png>
+Package pdftex.def Info: q5_fig1_poles.png  used on input line 431.
+(pdftex.def)             Requested size: 440.84746pt x 221.91023pt.
+<q5_fig1_zeros.png, id=84, 1117.17375pt x 561.59813pt>
+File: q5_fig1_zeros.png Graphic file (type png)
+<use q5_fig1_zeros.png>
+Package pdftex.def Info: q5_fig1_zeros.png  used on input line 439.
+(pdftex.def)             Requested size: 440.84746pt x 221.6103pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 445--450
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 451--457
+
+ []
+
+[10 <./q5_fig1_poles.png> <./q5_fig1_zeros.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 458--466
+
+ []
+
+<q5_fig2.png, id=90, 517.935pt x 436.63126pt>
+File: q5_fig2.png Graphic file (type png)
+<use q5_fig2.png>
+Package pdftex.def Info: q5_fig2.png  used on input line 470.
+(pdftex.def)             Requested size: 264.51115pt x 222.9988pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 476--480
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 481--485
+
+ []
+
+
+Overfull \hbox (0.8161pt too wide) in paragraph at lines 486--514
+[]$[]$   $[]$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 486--514
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 515--522
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 523--526
+
+ []
+
+[11 <./q5_fig2.png>]
+<q5_fig3.png, id=95, 1129.97156pt x 565.36218pt>
+File: q5_fig3.png Graphic file (type png)
+<use q5_fig3.png>
+Package pdftex.def Info: q5_fig3.png  used on input line 537.
+(pdftex.def)             Requested size: 440.84746pt x 220.568pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 535--542
+
+ []
+
+<q5_fig4_L=20.png, id=96, 634.62094pt x 513.41812pt>
+File: q5_fig4_L=20.png Graphic file (type png)
+<use q5_fig4_L=20.png>
+Package pdftex.def Info: q5_fig4_L=20.png  used on input line 548.
+(pdftex.def)             Requested size: 224.82977pt x 181.89258pt.
+<q5_fig4_L=50.png, id=97, 614.295pt x 537.50812pt>
+File: q5_fig4_L=50.png Graphic file (type png)
+<use q5_fig4_L=50.png>
+Package pdftex.def Info: q5_fig4_L=50.png  used on input line 549.
+(pdftex.def)             Requested size: 211.60489pt x 185.15344pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--555
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 556--560
+
+ []
+
+<q5_fig5.png, id=98, 1118.67938pt x 536.0025pt>
+File: q5_fig5.png Graphic file (type png)
+<use q5_fig5.png>
+Package pdftex.def Info: q5_fig5.png  used on input line 568.
+(pdftex.def)             Requested size: 440.84746pt x 211.22385pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 566--573
+
+ []
+
+[12 <./q5_fig3.png> <./q5_fig4_L=20.png> <./q5_fig4_L=50.png>] [13 <./q5_fig5.png>] (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+) (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Program_A.py
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 37.
+ (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/base\omlcmr.fd
+File: omlcmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 37.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 40.
+ (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 40.
+ [14]
+Overfull \hbox (73.80165pt too wide) in paragraph at lines 106--107
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[15]) [16] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Program_B.py) [17] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_1.py [18] [19]) [20] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_2.py [21]) [22] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_3.py [23]) [24] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/continued_fraction.py
+Overfull \hbox (3.30177pt too wide) in paragraph at lines 43--45
+[][][][][][][][][][][][][][][][] 
+ []
+
+) [25] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_4.py [26]
+Overfull \hbox (3.30177pt too wide) in paragraph at lines 77--78
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[27]) [28] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_5.py [29]
+LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 114.
+ [30] [31]) [32] (CATAM 7.5.aux) ) 
+Here is how much of TeX's memory you used:
+ 7747 strings out of 475413
+ 123380 string characters out of 2777672
+ 702019 words of memory out of 3000000
+ 29016 multiletter control sequences out of 15000+600000
+ 478816 words of font info for 62 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,10n,63p,307b,1802s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\angus\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\angus\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "CATAM 7.5.pdf" (33 pages, 1361035 bytes).
+PDF statistics:
+ 234 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+
