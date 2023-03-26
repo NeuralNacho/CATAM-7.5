@@ -1,3 +1,4 @@
+from ast import List
 import numpy as np
 import matplotlib.pyplot as plt
 import math
@@ -14,5 +15,5 @@ print(math.sqrt(11) - f(10))
 a = [1, 2, 3, 4]
 print(a[:2]) """
 
-a =1+0j
-print(a.imag == 0)
+a = 'asdfgagafd'
+print(a[:4])

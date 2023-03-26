@@ -111,7 +111,8 @@ def plot_results(results):
         plt.scatter(x, y, s = 60, 
             label = 'L = ${}$'.format(L))
         L += 1
-    plt.legend(loc = 'upper right', prop={'size': 16})
+    #plt.legend(loc = 'upper left', prop={'size': 16},
+    #            ncol = 2)
     plt.show()
 
 
@@ -120,7 +121,7 @@ def investigate_function(find_coefficient):
     # depending on function number
     poles_list = []
     zeros_list = []
-    for L in range(1, 11):
+    for L in range(1, 151):
         c_vector = np.empty([0], dtype = np.double)
         for i in range(2*L+ 1):
             c_vector = np.append(c_vector, 
@@ -141,8 +142,8 @@ def investigate_function(find_coefficient):
         #print('L = ', L, 'poles: ', poles)
         #print('L = ', L, 'zeros: ', zeros)
         
-    plot_results(zeros_list)
-    #plot_results(poles_list)
+    #plot_results(zeros_list)
+    plot_results(poles_list)
 
 
 def generate_f5_table():
@@ -163,9 +164,9 @@ def generate_f5_table():
         for element in poles:
             if element.imag == 0 and (element + 1) < 0.03:
                 real_poles.append(element)
-    print(np.log(np.negative(real_poles)))
+    print(real_poles)
 
 
 if __name__ == '__main__':
     investigate_function(find_f1_coefficient)
-    generate_f5_table()
+    #generate_f5_table()
