@@ -121,4 +121,4 @@ if __name__ == '__main__':
     tabulate_error(11)
     #plot_error(10)
     #print( find_xi(50) )
-    #print_xi_factor(90)
+    print_xi_factor(90)

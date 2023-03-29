@@ -29,6 +29,7 @@ class approximator:
         # We make sure the dtype is float64
 
         rows = []
+        # Makes up rows of c_matrix
 
         for i in range(self.M):
             # indexing matrix rows
@@ -54,7 +55,7 @@ class approximator:
         # Need 0 index of result from lstsq function
 
         # NOTE: q_vector starts from q_1 unlike p_vector
-        # which starts from p_1
+        # which starts from p_0
         self.q_vector = q_vector
 
 

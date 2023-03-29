@@ -21,7 +21,7 @@
 	\setlength{\parindent}{0pt}
 	\captionsetup{justification=centering}
 	\lstset{
-		showstringspaces=false
+		showstringspaces=false	
 	}
 	
 	
@@ -55,7 +55,8 @@ accuracy via polynomial division of the results.
 
 \subsubsection*{Question 1}
 
-NEED TO TAKE M = L + 1 SOMEWHERE IN THIS PROJECT. IN QUESTION 4? - WHAT IS THE DETERMINANT IN PROGRAM A HERE?
+NEED TO TAKE M = L + 1 SOMEWHERE IN THIS PROJECT. IN QUESTION 4? - 
+WHAT IS THE DETERMINANT IN PROGRAM A HERE?
 - COULD IT AFFECT ERROR IN QUESTION 3?
 
 Using the binomial expansion, we obtain,
@@ -74,15 +75,22 @@ The radius of convergence can be found via the ratio test.
 	& = \lim_{k \to \infty}\left| \frac{ (2k-1)(2k-2) }{ 4(k+1)(k-1) } \right| &&\\
 	& = 1
 \end{flalign*}
-THIS MEANS that the Pad\'e APPROXIMANT will only be useful within the disk of radius 1 \ 
-centred at 0 in the complex plane. Also, the further from 0 you go, the more terms of \ 
-the power series are required for a precise result. Therefore, approximants with a \ 
-lower value of L+M+1 become much less useful in these cases.
+This means that the power series will only provide a useful estimate
+in the disk of radius 1 centred at 0 in the complex plane. Also, the 
+further from 0 you go, the more terms of the power series are required 
+for an equally precise result. Since a Pad\'e approximant approximates
+the power series we would expect approximants with a higher value of
+$L+M+1$ to be much more useful further from 0 (and potentially beyond 1).
 \\
+%THIS MEANS that the Pad\'e APPROXIMANT will only be useful within the 
+%disk of radius 1 centred at 0 in the complex plane. Also, the further
+%from 0 you go, the more terms of the power series are required for a 
+%precise result. Therefore, approximants with a lower value of L+M+1 
+%become much less useful in these cases.
 
-Taking $x = 1$ in the power series, we obtain $\sum_{k = 0}^{\infty}c_{k}$. Since this converges, the \
-sequence of partial sums $\sum_{k = 0}^{N}c_{k}$ converges. This convergence is illustrated in Figure\ 
-\ref{q1_fig1}.
+Taking $x = 1$ in the power series, we obtain $\sum_{k = 0}^{\infty}c_{k}$. 
+Since this converges, the sequence of partial sums $\sum_{k = 0}^{N}c_{k}$ 
+converges. This convergence is illustrated in Figure \ref{q1_fig1}.
 
 \vspace{0.3cm}
 \begin{minipage}{\textwidth}
@@ -92,8 +100,8 @@ sequence of partial sums $\sum_{k = 0}^{N}c_{k}$ converges. This convergence is 
 \end{minipage}
 \vspace{0.1cm}
 
-We notice that the partial sums oscillate above and below $\sqrt{2}$, with the error getting smaller\
-as $k$ increases. \\
+We notice that the partial sums oscillate above and below $\sqrt{2}$, 
+with the error getting smaller as $N$ increases. \\
 
 We use the Lagrange form of the remainder for a Taylor expansion to estimate the error of the \
 partial sum as an estimate of $\sqrt{2}$. The remainder at $x = 1$ will be,
@@ -105,12 +113,14 @@ for some real number $\xi$ between 0 and 1 and following simplifications, we hav
 	|R_{N}(1)|  = \frac{ (2N-1)! }{ 2^{2N}(N-1)!(N+1)! } (1+\xi)^{ -N + \frac{1}{2} } &&
 \end{flalign*}
 \\
-Using the function \texttt{find\textunderscore xi} in the program on page \pageref{Question_1}, \ 
-we find that $\xi$ is small and decreases as $N$ increases. For example, for $N = 3$, $\xi$ = 0.230; \ 
-for $N = 10$, $\xi = 0.0681$ and for $N = 50$, $\xi = 0.0138$. Then the \
-\texttt{print\textunderscore xi\textunderscore factor} also in the program on page \pageref{Question_1} \
-can be used to show that for $N < 80$,  $ 0.5 \leq (1+\xi)^{ -N + \frac{1}{2} } \leq 0.7$. Hence, \
-we have,
+Using the function \texttt{find\textunderscore xi} in the program on 
+page \pageref{Question_1}, we find that $\xi$ is small and decreases 
+as $N$ increases. For example, for $N = 3$, $\xi$ = 0.230; for $N = 10$,
+$\xi = 0.0681$ and for $N = 50$, $\xi = 0.0138$. Then the 
+\texttt{print\textunderscore xi\textunderscore factor} function also in the 
+program on page \pageref{Question_1} can be used to show that for 
+$N < 80$,  $ 0.5 \leq (1+\xi)^{ -N + \frac{1}{2} } \leq 0.7$ and 
+$(1+\xi)^{ -N + \frac{1}{2} }$ is decreasing. Hence, we have,
 \begin{flalign}
 	R_{N}(1)  &\leq 0.7 \cdot \frac{ (2N-1)! }{ 2^{2N}(N-1)!(N+1)! } && \nonumber \\
 	&= 0.7 \cdot \frac{1 \cdot 3 \cdot 5 \cdot ... \cdot (2N - 1) }{ 2 \cdot 4 \cdot 6 \cdot ... \cdot 2N} \
@@ -128,20 +138,27 @@ We prove the following lemma:
 	&\leq \frac{2N-1}{(2N)^{2}} \text{ ~since~ } (n-1)(n+1) = n^{2}-1 \leq n^{2} && \\
 	&\leq 1/2N ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ \qed
 \end{flalign*}
-Applying the lemma to (\ref{error_eq}), we obtain the following overestimate for the error as $N$ increases:
+Applying the lemma to (\ref{error_eq}), we obtain the following 
+overestimate for the error as $N$ increases:
 \begin{flalign}
 	|R_{N}(1)|  \approx \frac{ 0.7 }{ (2N+2)\sqrt{2N} } \label{q1_eq2}
 \end{flalign}
-Figure \ref{q1_fig2} illustrates this as an error bound. We can see that this gives an accurate 
-approximation of the error.
+And for large $N > 80$ the following overestimate is more accurate:
+\begin{flalign*}
+	|R_{N}(1)|  \approx \frac{ 0.505 }{ (2N+2)\sqrt{2N} }
+\end{flalign*}
+
+Figure \ref{q1_fig2} illustrates (\ref{q1_eq2}) as an error bound. 
+We can see that this gives an accurate approximation of the error.
 
 \vspace{0.3cm}
 \begin{minipage}{\textwidth}
 	\includegraphics[width=\linewidth]{q1_fig2}
-	\captionof{figure}{Actual error and estimated erro of the partial sum as an estimate of $\sqrt{2}$}
+	\captionof{figure}{Actual error and estimated error of the partial 
+	sum as an estimate of $\sqrt{2}$}
 	\label{q1_fig2}
 \end{minipage}
-\vspace{0.1cm}
+\vspace{0.4cm}
 
 We know $(1+\xi)^{-N + \frac{1}{2}}$ is relatively unchanged when $N$ is increased by $1$. Thus taking \
 the ratio of $R_{N}(1)$ and $R_{N+1}(1)$ shows that incrementing $N$ by $1$ decreases the error by \
@@ -164,12 +181,12 @@ for different values of $L$.
 	\multicolumn{1}{|c|}{1}   & \multicolumn{1}{c|}{0.014213562373095234}   \\ \hline
 	\multicolumn{1}{|c|}{2}   & \multicolumn{1}{c|}{0.00042045892481934466} \\ \hline
 	\multicolumn{1}{|c|}{3}   & \multicolumn{1}{c|}{1.2378941142587863e-05} \\ \hline
-	4                         & 3.644035522221145e-07                       \\ \hline
-	5                         & 1.072704058913132e-08                       \\ \hline
-	6                         & 3.1577518377901015e-10                      \\ \hline
-	7                         & 9.29567534058151e-12                        \\ \hline
-	8                         & 2.737809978725636e-13                       \\ \hline
-	9                         & 7.993605777301127e-15                       \\ \hline
+	\multicolumn{1}{|c|}{4}   & 3.644035522221145e-07                       \\ \hline
+	\multicolumn{1}{|c|}{5}   & 1.072704058913132e-08                       \\ \hline
+	\multicolumn{1}{|c|}{6}   & 3.1577518377901015e-10                      \\ \hline
+	\multicolumn{1}{|c|}{7}   & 9.29567534058151e-12                        \\ \hline
+	\multicolumn{1}{|c|}{8}   & 2.737809978725636e-13                       \\ \hline
+	\multicolumn{1}{|c|}{9}   & 7.993605777301127e-15                       \\ \hline
 	10                        & 4.440892098500626e-16                       \\ \hline
 	11                        & 2.220446049250313e-16                       \\ \hline
 	12                        & 2.220446049250313e-16                       \\ \hline
@@ -182,33 +199,46 @@ for different values of $L$.
 
 \begin{minipage}{\textwidth}
 	\includegraphics[width=\linewidth]{q2_fig1}
+
+	\vspace*{-0.2cm}
+
 	\captionof{figure}{Plot of $L$ against $\ln(Error)$}
 	\label{q2_fig1}
 \end{minipage}
 \vspace{0.3cm}
 
-From Figure \ref{q2_fig1}, we see that for $L \leq 10$, the error decreases exponentially.
-We observe from the table that the minimum value of the error for $L \leq 15$ is 2.220446049250313e-16.\ 
-This must be true in general since this is exactly the machine precision, i.e. it is the  difference between 1.0 and\ 
-the smallest 64-bit double precision floating-point value larger than 1.0. Hence, the machine precision\ 
+From Figure \ref{q2_fig1}, we see that for $L \leq 10$, the error 
+decreases exponentially. We observe from the table that the minimum 
+value of the error for $L \leq 15$ is 2.220446049250313e-16.
+This must be true in general since this is exactly the machine precision, 
+i.e. it is the  difference between 1.0 and the smallest 64-bit double 
+precision floating-point value larger than 1.0. Hence, the machine precision 
 determines the smallest error.
 \\
 
-In cases where the matrix used to solve equation (4) is non-singular, iterative improvement will make no\ 
-difference since the exact solution is found so no more improvements can be made. The determinant of the\
-matrix in question approaches 0 as $L$ increases. The \texttt{lstsq} function which I have used as the\ 
-Python equivalent of \texttt{mldivide} finds the least-squares solution of the equation $A\mathbf{x} = \mathbf{b}$. 
-Suppose for some $L$ the determinant of the matrix used to solve equation (4) were 0 and let the least\ 
-squares solution for the $q_{k}$ be $\mathbf{y}$. Then $\mathbf{b}-A\mathbf{y}$ will be orthogonal to \ 
-$A\mathbf{x}$ for any $\mathbf{x}$. Hence no more improvements can be made in this case either.
+In cases where the matrix used to solve equation (4) is non-singular, 
+iterative improvement will make no difference since the exact solution 
+is found so no more improvements can be made. The determinant of the 
+matrix in this case approaches 0 as $L$ increases. The \texttt{lstsq}
+function which I have used as the Python equivalent of \texttt{mldivide} 
+finds the least-squares solution of the equation $A\mathbf{x} = \mathbf{b}$. 
+Suppose for some $L$ the determinant of the matrix used to solve equation 
+(4) were 0 and let the least squares solution for the $q_{k}$ be 
+$\mathbf{y}$. Then $\mathbf{b}-A\mathbf{y}$ will be orthogonal to
+$A\mathbf{\delta y}$ for any $\mathbf{\delta y}$. This is because
+for least square problems, we have $A^{T}(\mathbf{b}-A\mathbf{y}) = 0$ 
+which can be derived by differentiation of $||\mathbf{b}-A\mathbf{y}||^{2}$. 
+Hence, no more improvements can be made in this case either.
 \\
 
-In addition, the limit on the error is caused my the machine precision, not the solution to equation (4).\ 
-Thus iterative improvement would have no effect on the minimum error.
+In addition, the limit on the error is caused my the machine precision, 
+not the solution to equation (4). Thus iterative improvement would have 
+no effect on the minimum error.
 \\
 
-In the power series of $R_{L,L}(x)$, the first $2L+1$ terms match that of $f_{1}(x)$. The error of\ 
-$R_{L,L}(1)$ is much less than the power series estimate of $\sqrt{2}$ for the same number of matching terms.\
+In the power series of $R_{L,L}(x)$, the first $2L+1$ terms match that 
+of $f_{1}(x)$. The error of $R_{L,L}(1)$ is much less than the power 
+series estimate of $\sqrt{2}$ for the same number of matching terms.
 For instance, with $L = 5$, the error of the Pad\'e approximant is $1.07 \times 10^{-8}$ while for\ 
 $N=10$ the error from the partial sum is $4.28 \times 10^{-2}$. This is surprising because using the same\
 amount of information, a much more accurate estimate is obtained. This can be explained by the fact that\ 
@@ -227,6 +257,9 @@ machine precision.
 
 \begin{minipage}{\textwidth}\centering
 	\includegraphics[width=\linewidth]{q3_N=3}
+
+	\vspace*{-0.2cm}
+
 	\captionof{figure}{Plot of power series estimate of $f_{1}(x)$ for $N=3$}
 	\label{q3_N=3}
 \end{minipage}
@@ -246,25 +279,35 @@ machine precision.
 
 \begin{minipage}{\textwidth}\centering
 	\includegraphics[width=0.8\linewidth]{q3_L=50}
+
+	\vspace*{-0.2cm}
+
 	\captionof{figure}{Plots of Pad\'e approximant estimates of $f_{1}(x)$ for $L = 3, 10$ and $50$}
 	\label{q3_L=50}
 \end{minipage}
-\vspace{0.1cm}
 
-We can see from Figure \ref{q3_N=3} that for $N=3$, the estimate increases at a rate of $x^{N}$.
-This means it diverges from $f_{1}(x)$ and for larger $N$ the estimate diverges even more quickly. This is
-because of the $x^{N}$ term in the power series which becomes very large for $x > 1$.
+\vspace{0.5cm}
+
+We can see from Figure \ref{q3_N=3} that for $N=3$, the estimate increases
+at a rate of $x^{N}$. This means it diverges from $f_{1}(x)$ and for 
+larger $N$ the estimate diverges even more quickly. This is because of 
+the $x^{N}$ term in the power series which becomes very large for $x > 1$.
 \\
 
-In comparion, the diagonal Pad\'e approximant with $L=3$ stays much closer to $f_{1}(x)$ than the power series
-estimate. This is due to the fact that the Pad\'e approximant is a fraction so its limiting behaviour as 
-$x \to \infty$ is much more similar to $f_{1}(x)$ than the power series' behaviour is. However, $L = 3$ does 
-not give a good estimate in the range $1 \leq x \leq 100$. We see that for $L = 10$ and $L = 50$, we obtain
+In comparion, the diagonal Pad\'e approximant with $L=3$ stays much closer 
+to $f_{1}(x)$ than the power series estimate. This is due to the fact that 
+the Pad\'e approximant is a fraction so its limiting behaviour as 
+$x \to \infty$ is much more similar to $f_{1}(x)$ than the power series' 
+behaviour is. However, $L = 3$ does not give a good estimate in the range 
+$1 \leq x \leq 100$. We see that for $L = 10$ and $L = 50$, we obtain
 much closer estimates while the power series would only diverge further.
 \\
 
 \begin{minipage}{\textwidth}\centering
 	\includegraphics[width=\linewidth]{q3_fig3}
+
+	\vspace*{-0.2cm}
+
 	\captionof{figure}{Plot of $L$ against $\ln(Error)$ for $x = 10$}
 	\label{q3_fig3}
 \end{minipage}
@@ -272,10 +315,14 @@ much closer estimates while the power series would only diverge further.
 
 \begin{minipage}{\textwidth}\centering
 	\includegraphics[width=\linewidth]{q3_fig4}
+
+	\vspace*{-0.2cm}
+
 	\captionof{figure}{Plot of $L$ against $\ln(Error)$ for $x = 100$}
 	\label{q3_fig4}
 \end{minipage}
-\vspace{1cm}
+
+\vspace{0.4cm}
 
 From Figures \ref{q3_fig3} and \ref{q3_fig4}, we see that the error decreases exponentially for $L \leq 11$
 since the graphs are linear for this range of $L$. Beyond this range, the error remains in the same area as 
@@ -335,6 +382,9 @@ can be found for calculation across the whole range $0 \leq x \leq 20$.
 	\includegraphics[width=0.49\linewidth]{q4_approx_x=0.1}
 	\includegraphics[width=0.49\linewidth]{q4_approx_x=1}
 	\includegraphics[width=0.5\linewidth]{q4_approx_x=20}
+
+	\vspace*{-0.2cm}
+
 	\captionof{figure}{Plots of $L$ against $\ln(Error)$ for $x = 0.1, 1$ and $20$}
 	\label{q4_approx_change}
 \end{minipage}
@@ -354,6 +404,9 @@ $L = 7$ and taking the diagonal approximant.
 \begin{minipage}{0.45\textwidth}
 	\centering
 	\includegraphics[width=\linewidth]{q4_series_order=1}
+
+	\vspace*{-0.2cm}
+
 	\captionof{figure}{Error from the order 1 power series}
 	\label{q4_series_o1}
 \end{minipage}
@@ -361,6 +414,9 @@ $L = 7$ and taking the diagonal approximant.
 \begin{minipage}{0.45\textwidth}
 	\centering
 	\includegraphics[width=\linewidth]{q4_series_order=9}
+
+	\vspace*{-0.2cm}
+
 	\captionof{figure}{Error from the order 9 power series}
 	\label{q4_series_o2}
 \end{minipage}
@@ -369,14 +425,22 @@ $L = 7$ and taking the diagonal approximant.
 \begin{minipage}{0.45\textwidth}
 	\centering
 	\includegraphics[width=\linewidth]{q4_approx_L=7}
-	\captionof{figure}{Error of Pad\'e approximant with $L = 7$ in range the [0,20]}
+
+	\vspace*{-0.2cm}
+
+	\captionof{figure}{Error of Pad\'e approximant with $L = 7$
+	in range the [0,20]}
 	\label{q4_approx_L=7}
 \end{minipage}
 \hspace{0.9cm}
 \begin{minipage}{0.48\textwidth}
 	\centering
 	\includegraphics[width=\linewidth]{q4_approx_zoomed}
-	\captionof{figure}{Error of Pad\'e approximant with $L = 7$ zoomed in on the range [0,1]}
+
+	\vspace*{-0.2cm}
+
+	\captionof{figure}{Error of Pad\'e approximant with $L = 7$ 
+	zoomed in on the range [0,1]}
 	\label{q4_approx_zoomed}
 \end{minipage}
 \vspace{0.5cm}
@@ -577,46 +641,6 @@ For odd L this is because the leagind coefficients have opposite signs e.g. for 
 For the even case we also have negative result because ...
 Explain with leading coeffieient for odd (pole for even?)
 
-
-\pagebreak
-\textbf{Program\textunderscore A.py for Programming Task}\centering\label{Program_A}
-\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Program_A.py}
-\vspace{2cm}
-
-\pagebreak
-\textbf{Program\textunderscore B.py for Programming Task}\centering\label{Program_B}
-\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Program_B.py}
-\vspace{2cm}
-
-\pagebreak
-\textbf{Question\textunderscore 1.py for Question 1}\centering\label{Question_1}
-\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_1.py}
-\vspace{2cm}
-
-\pagebreak
-\textbf{Question\textunderscore 1.py for Question 2}\centering\label{Question_2}
-\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_2.py}
-\vspace{2cm}
-
-\pagebreak
-\textbf{Question\textunderscore 2.py for Question 3}\centering\label{Question_3}
-\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_3.py}
-\vspace{2cm}
-
-\pagebreak
-\textbf{continued\textunderscore fraction.py for Question 3}\centering\label{continued_fraction}
-\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/continued_fraction.py}
-\vspace{2cm}
-
-\pagebreak
-\textbf{Question\textunderscore 4.py for Question 4}\centering\label{Question_4}
-\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_4.py}
-\vspace{2cm}
-
-\pagebreak
-\textbf{Question\textunderscore 5.py for Question 5}\centering\label{Question_5}
-\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_5.py}
-\vspace{2cm}
 
 
 \end{document}
