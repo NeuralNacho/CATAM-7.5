@@ -371,7 +371,13 @@ can be found for calculation across the whole range $0 \leq x \leq 20$.
 	\centering
 	\includegraphics[width=0.49\linewidth]{q4_series_x=0.1}
 	\includegraphics[width=0.49\linewidth]{q4_series_x=1}
+
+	\vspace{0.3cm}
+
 	\includegraphics[width=0.5\linewidth]{q4_series_x=20}
+
+	\vspace*{-0.2cm}
+
 	\captionof{figure}{Plots of power series order against $\ln(Error)$ for $x = 0.1, 1$ and $20$}
 	\label{q4_series_change}
 \end{minipage}
@@ -381,6 +387,9 @@ can be found for calculation across the whole range $0 \leq x \leq 20$.
 	\centering
 	\includegraphics[width=0.49\linewidth]{q4_approx_x=0.1}
 	\includegraphics[width=0.49\linewidth]{q4_approx_x=1}
+
+	\vspace{0.2cm}
+
 	\includegraphics[width=0.5\linewidth]{q4_approx_x=20}
 
 	\vspace*{-0.2cm}
@@ -388,8 +397,8 @@ can be found for calculation across the whole range $0 \leq x \leq 20$.
 	\captionof{figure}{Plots of $L$ against $\ln(Error)$ for $x = 0.1, 1$ and $20$}
 	\label{q4_approx_change}
 \end{minipage}
-\vspace{0.5cm}
 
+\vspace{0.4cm}
 From Figure \ref{q4_series_change} we can see that for large $x \geq 1$ the error of the power series
 estimates diverges exponentially so the power series is not useful for any order here. On the other
 hand, the graph with $x = 0.1$ demonstrates that the series gives a good estimate for much smaller x
@@ -432,7 +441,7 @@ $L = 7$ and taking the diagonal approximant.
 	in range the [0,20]}
 	\label{q4_approx_L=7}
 \end{minipage}
-\hspace{0.9cm}
+\hspace{0.5cm}
 \begin{minipage}{0.48\textwidth}
 	\centering
 	\includegraphics[width=\linewidth]{q4_approx_zoomed}
@@ -460,14 +469,19 @@ than the truncated power series with the matching first $L + M + 1$ terms.
 
 \subsubsection*{Question 5}
 
+\underline{Poles and zeros of $f_{1}(x)$}
+
+\vspace{0.5cm}
 I will display the values of $x$ at the poles and zeros of the Pad\'e approximant of $f_{1}(x)$ for 
 selected $L$. Here, I will only consider $L\leq11$ as we explore larger $L$ for $f_{1}(x)$ in depth
-later.\\
-\underline{Poles}\\
+when discussing `anomalous' poles.\\
+
+Poles,\\
 $L = 1: ~~~ x \approx -4$\\
 $L = 3: ~~~ x \approx -20.196, -2.572, -1.232$\\
 $L = 10: ~~ x \approx -179.079, -20.197,~....., -1.095, -1.023$\\
-\underline{Zeros}\\
+
+Zeros,\\
 $L = 1: ~~~ x \approx -1.333$\\ 
 $L = 3: ~~~ x \approx -5.312, -1.636, -1.052$\\
 $L = 10: ~~ x \approx -45.021, -11.511,~.....,  -1.052, -1.006$
@@ -479,11 +493,19 @@ the least negative values approaching 1 as $L$ is increased. Meanwhile, the larg
 $L$ is increased and the remaining poles/zeros lie between this value and 1.
 \\
 
+\vspace{0.4cm}
+\underline{Poles and zeros of $f_{3}(x)$}
+
+\vspace{0.5cm}
 The Pad\'e approximant of $f_{3}(x)$ is the inverse of the Pad\'e approximant of $f_{1}(x)$. Therefore, the
 poles of this approximant are the zeros of the approximant of $f_{1}(x)$ and vice versa. Hence the results
 above can be used to describe their behaviour.
 \\
 
+\vspace{0.4cm}
+\underline{Poles and zeros of $f_{4}(x)$}
+
+\vspace{0.5cm}
 We have the following results for $f_{4}(x)$.
 % \underline{Poles}\\
 % $L = 1: ~~~ x \approx -4$\\
@@ -493,7 +515,7 @@ We have the following results for $f_{4}(x)$.
 \vspace{0.3cm}
 \begin{minipage}{\textwidth}
 	\includegraphics[width=\linewidth]{q5_fig1_poles}
-	\captionof{figure}{Scatter graph showing poles of $R_{L,L}(x)$ for $f_{4}(x)$}
+	\captionof{figure}{Graph showing poles of $R_{L,L}(x)$ for $f_{4}(x)$}
 	\label{q5_fig1_poles}
 \end{minipage}
 \vspace{0.1cm}
@@ -501,7 +523,7 @@ We have the following results for $f_{4}(x)$.
 \vspace{0.3cm}
 \begin{minipage}{\textwidth}
 	\includegraphics[width=\linewidth]{q5_fig1_zeros}
-	\captionof{figure}{Scatter graph showing zeros of $R_{L,L}(x)$ for $f_{4}(x)$}
+	\captionof{figure}{Graph showing zeros of $R_{L,L}(x)$ for $f_{4}(x)$}
 	\label{q5_fig1_zeros}
 \end{minipage}
 \vspace{0.1cm}
@@ -512,46 +534,62 @@ $L = 2, 4 \text{ or } 6$ however there is exactly one for all odd $L$ excluding 
 the remaining even $L\geq 8$.
 \\
 
-We can obtain similar graphs for $f_{5}(x)$. The number of real poles and zeros remains the same as above
-apart from the fact that there are two real poles for $L = 4$ and $L = 6$. When there are real poles, 
-there is always one very close to -1 and for even values of $L$ there is an additional positive real pole. 
-For instance, for $L = 14$ there are poles -1.00 and 1.48. As $L$ increases above 10, additional poles 
+\vspace{0.4cm}
+\underline{Poles and zeros of $f_{5}(x)$}
+
+\vspace{0.5cm}
+We can obtain similar graphs for $f_{5}(x)$ as for $f_{4}(x)$. The number of real poles 
+and zeros remains the same as above apart from the fact that there are two real poles 
+for $L = 4$ and $L = 6$. When there are real poles, there is always one very close to 
+-1 and for even values of $L$ there is an additional positive real pole. For instance, 
+for $L = 14$ there are poles -1.00 and 1.48. As $L$ increases above 10, additional poles 
 and zeros are within a distance of 2 to the origin.
 \\
 
+\vspace{0.4cm}
+\underline{Poles and zeros of $f_{6}(x)$}
+
+\vspace{0.5cm}
 For $f_{6}(x)$, there is a real pole for $L\geq 2 $ with increasingly large magnitute. For example, for 
 $L = 9$ there is a pole at $x=7390.11$ and for $L=10$ there is one at $x=-22133$. This large real pole 
 alternates between positive and negative values for odd and even values of $L$ respectively and seems
-to increase in magnitude by a factor of approximately 3 each time $L$ is increased. There is a second
-real pole for even $L$ which is just less than -2. Then for $L > 16$, there can be even more real poles 
-than the ones described. The remaining poles tend towards 
+to increase in magnitude by a factor of approximately 3 each time $L$ is increased by 1. There is a 
+second real pole for even $L$ which is just less than -2. Then for $L > 16$, there can be even more real
+poles than the ones described. The remaining poles tend towards 
 $-\frac{1}{2} \pm \frac{\sqrt{3}}{2}$ as outline in Figure \ref{q5_fig2}.
 \\
 
-\vspace{0.1cm}
 \begin{minipage}{\textwidth}
 	\centering
-	\includegraphics[width=0.6\linewidth]{q5_fig2}
-	\captionof{figure}{Graph showing poles of approximants of $f_{6}(x)$}
+	\includegraphics[width=0.9\linewidth]{q5_fig2_v2}
+
+	\vspace*{-0.2cm}
+
+	\captionof{figure}{Graph showing poles of approximants of $f_{6}(x)$ close to the origin}
 	\label{q5_fig2}
 \end{minipage}
-\vspace{0.1cm}
+\vspace{0.3cm}
 
 The zeros of $f_{6}(x)$ are positioned in an identical fashion to Figure \ref{q5_fig2} with an increasing 
 number of roots approaching $-\frac{1}{2} \pm \frac{\sqrt{3}}{2}$. 
 % no clear pattern for real zeros when considering higher L
 \\
 
-The least negative poles and zeros of the approximants of $f_{1}(x)$ and $f_{3}(x)$ tending to -1 corresponds
-to a branch point of both functions at $x=-1$. The remaining poles and zeros can be 
-considered to be lying on a branch cut along the negative real axis.
+\vspace{0.4cm}
+\underline{Correspondence to poles, zeros, branch points and branch cuts}
+
+\vspace{0.5cm}
+The smallest in magnitude negative poles and zeros of the approximants of $f_{1}(x)$ and 
+$f_{3}(x)$ tending to -1 corresponds to a branch point of both functions at $x=-1$. The 
+remaining poles and zeros can be considered to be lying on a branch cut along the negative 
+real axis.
 \\
 
 \begin{minipage}{0.45\textwidth}
-$f_{4}(x)$ has no zeros, poles or branch points so there is no correspondence with the approximants.
-$f_{5}(x)$ has a pole at $z = -1$ which corresponds to the real poles we find very close to -1 in the
-approximants. Table \ref{table_1} demonstrates this in more detail as it displays the value of the
-pole close to -1 for $L \leq 10$.
+$f_{4}(x)$ has no zeros, poles or branch points so there is no correspondence with the 
+approximants.$~f_{5}(x)$ has a pole at $z = -1$ which corresponds to the real poles we 
+find very close to -1 in the approximants. Table \ref{table_1} demonstrates this in more 
+detail as it displays the value of the pole close to -1 for $L \leq 10$.
 \end{minipage}
 \hspace{0.05\textwidth}
 \begin{minipage}{0.49\textwidth}
@@ -564,13 +602,16 @@ pole close to -1 for $L \leq 10$.
 		\multicolumn{1}{|c|}{3}   & \multicolumn{1}{c|}{-0.9998189279229968} \\ \hline
 		\multicolumn{1}{|c|}{4}   & \multicolumn{1}{c|}{-1.0000008547034955} \\ \hline
 		\multicolumn{1}{|c|}{5}   & \multicolumn{1}{c|}{-0.999999997472825}  \\ \hline
-		6                         & 1.0000000000050808                       \\ \hline
-		7                         & -0.9999999999999929                      \\ \hline
-		8                         & -0.9999999999999992                      \\ \hline
-		9                         & -0.9999999999999993                      \\ \hline
-		10                        & -0.9999999999999997                      \\ \hline
+		\multicolumn{1}{|c|}{6}   & \multicolumn{1}{|c|}{1.0000000000050808}	\\ \hline
+		\multicolumn{1}{|c|}{7}   & \multicolumn{1}{|c|}{-0.9999999999999929}   \\ \hline
+		\multicolumn{1}{|c|}{8}   & \multicolumn{1}{|c|}{-0.9999999999999992}   \\ \hline
+		\multicolumn{1}{|c|}{9}   & \multicolumn{1}{|c|}{-0.9999999999999993}   \\ \hline
+		10                        & \multicolumn{1}{|c|}{-0.9999999999999997}   \\ \hline
 
 	\end{tabular}
+
+	\vspace*{-0.2cm}
+
 	\captionof{table}{}
 	\label{table_1}
 \end{minipage}
@@ -584,25 +625,34 @@ the real axis.
 % (Figure 16 already presented above helps to highlight this)
 \\
 
+\vspace{0.4cm}
+\underline{‘Anomalous’ poles and zeros}
+
+\vspace{0.5cm}
 All of the poles and zeros of $f_{4}(x)$ shown in Figures \ref{q5_fig1_poles} and \ref{q5_fig1_zeros}
 are anomalous. The same is true of $f_{5}(x)$, excluding the real pole close to -1.
 \\
 
 For $f_{1}(x)$ we have anomalous poles and zeros when these values do not lie along the branch cut
-of the negative real axis, i.e. they are positive real or complex. The first time we get such an
+of the negative real axis, i.e.$~$they are positive real or complex. The first time we get such an
 anomalous result is for $L = 12$ where there is a pole at $x = 1.126575649706596$ and a zero at 
-$x = 1.1265756497065988$. Next, I will present figures for results of the poles but exact same kind 
-of results are obtained examining the zeros. Figure \ref{q5_fig3} gives an overview of where the
-poles/zeros are located with the difference colours corresponding to different values of $L$.
+$x = 1.1265756497065988$. Next, I will present figures for results of the poles but the exact same 
+kind of results are obtained examining the zeros. Figure \ref{q5_fig3} gives an overview of where 
+the poles/zeros are located with the different colours corresponding to different values of $L$.
 
 \vspace{0.3cm}
 \begin{minipage}{\textwidth}
 	\centering
 	\includegraphics[width=\linewidth]{q5_fig3}
+
+	\vspace*{-0.3cm}
+
 	\captionof{figure}{Graph showing poles of approximants of $f_{1}(x)$ for $L\leq30$}
 	\label{q5_fig3}
 \end{minipage}
 \\
+
+\vspace{0.2cm}
 
 We then focus on the anomalous poles which have a real part near 0 as in Figure \ref{q5_fig3}.
 
@@ -611,32 +661,47 @@ We then focus on the anomalous poles which have a real part near 0 as in Figure 
 	\centering
 	\includegraphics[width=0.51\linewidth]{q5_fig4_L=20}
 	\includegraphics[width=0.48\linewidth]{q5_fig4_L=50}
+
+	\vspace*{-0.2cm}
+
 	\captionof{figure}{Graphs showing poles of approximants of $f_{1}(x)$ for $L\leq20$ (left)
 	and $L\leq50$ (right)}
 	\label{q5_fig4_L=50}
 \end{minipage}
 \\
 
+\vspace{0.4cm}
+
 We can see from Figure \ref{q5_fig4_L=50} that for large L we get close to a unit circle
-of poles/roots for the diagonal Pad\'e approximant of $f_{1}(x)$. As L becomes larger, this circle
-gets closer to -1 and there are always points close to 1.
+of poles/zeros for the diagonal Pad\'e approximant of $f_{1}(x)$. As L becomes larger, this
+circle gets closer to -1 and there are always points close to 1.
 \\
 
+\vspace{0.4cm}
+\underline{Problems with approximants to $f_{6}$}
+
+\vspace{0.5cm}
 A major issue that may be encountered using Pad\'e approximants to estimate $f_{6}(x)$ along the
 real $x$-axis is that the approximant is incorrect for most negative reals. For instance, in
 Figure \ref{q5_fig5} we see that for two different diagonal approximants the approximants diverge
-from the actual value for $x<-1.5$.
+from the actual value for $x<-1.5$.\\
 
 \begin{minipage}{\textwidth}
 	\centering
 	\includegraphics[width=\linewidth]{q5_fig5}
+
+	\vspace{-0.2cm}
+
 	\captionof{figure}{Graph with $f_{6}(x)$ and two different approximants}
 	\label{q5_fig5}
 \end{minipage}
 \\
 
-We see that for negative reals $\leq 1.5$, the approximant is the negative of what it should be.
-For odd L this is because the leagind coefficients have opposite signs e.g. for $L = 15$ we have ...
+\vspace{0.3cm}
+
+We see that for negative reals beyond about $x=-3$, the approximant is the negative 
+of what it should be. For odd L this is because the leading coefficients have 
+opposite signs e.g. for $L = 15$ we have ...\\
 
 For the even case we also have negative result because ...
 Explain with leading coeffieient for odd (pole for even?)

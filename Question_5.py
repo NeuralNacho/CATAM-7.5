@@ -106,13 +106,17 @@ def plot_results(results):
     plt.tight_layout()
     L = 1
     for result in results:
+        # Use if statement for f6 graph:
+        if L % 3 != 1:
+            L += 1
+            continue
         x = [element.real for element in result]
         y = [element.imag for element in result]
         plt.scatter(x, y, s = 60, 
             label = 'L = ${}$'.format(L))
         L += 1
-    #plt.legend(loc = 'upper left', prop={'size': 16},
-    #            ncol = 2)
+    plt.legend(loc = 'upper right', prop={'size': 16},
+                ncol = 2)
     plt.show()
 
 
@@ -121,7 +125,7 @@ def investigate_function(find_coefficient):
     # depending on function number
     poles_list = []
     zeros_list = []
-    for L in range(1, 151):
+    for L in range(1, 15):
         c_vector = np.empty([0], dtype = np.double)
         for i in range(2*L+ 1):
             c_vector = np.append(c_vector, 
@@ -168,5 +172,8 @@ def generate_f5_table():
 
 
 if __name__ == '__main__':
-    investigate_function(find_f1_coefficient)
+    investigate_function(find_f6_coefficient)
+    # For f6 change plot to include less values of L
+    # by going into plot_results function
+
     #generate_f5_table()
