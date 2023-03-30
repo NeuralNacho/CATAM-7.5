@@ -44,13 +44,13 @@ def plot_log_error(L):
     plt.grid(linestyle = '--', linewidth = 0.5)
     plt.plot(log_vector, color = 'C2')
     plt.xlabel('$L$')
-    plt.ylabel('$\ln(error)$') 
+    plt.ylabel('$\ln(Error)$') 
     plt.xticks(x_vector)
     plt.show()
 
 
 if __name__ == '__main__':
-    L = 2
+    L = 15
     x = 1
 
     c_vector = np.empty([0], dtype = np.double)
@@ -62,7 +62,6 @@ if __name__ == '__main__':
     
     tabulate_error(L)
     # print('Machine precision: ', np.finfo(np.float64).eps)
-
     #plot_log_error(10)
 
 # ITERATIVE IMPROVEMENT ?

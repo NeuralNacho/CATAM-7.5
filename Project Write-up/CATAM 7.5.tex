@@ -45,19 +45,15 @@
 	
 \subsubsection*{Programming Task: Writing Programs A and B}
 
-The programs written for this task can be found on pages \pageref{Program_A} and \
-\pageref{Program_B}. From the numpy package in Python, I use the \texttt{lstsq} function \
-as an equivalent of \texttt{mldivide} from Matlab. I first tested Program A for basic \
-functions such as f(x) = 0 with different values of L and M. Then I carried out testing \
-with more complex functions such as f(x) = sin(x) and confirming the $O(x^{L+M+1})$ \
+The programs written for this task can be found on pages \pageref{Program_A} and
+\pageref{Program_B}. From the numpy package in Python, I use the \texttt{lstsq} function
+as an equivalent of \texttt{mldivide} from Matlab. I first tested Program A for basic
+functions such as $f(x) = 0$ with different values of $L$ and $M$. Then I carried out testing
+with more complex functions such as $f(x) = \sin(x)$ and confirming the $O(x^{L+M+1})$
 accuracy via polynomial division of the results.
 
 
 \subsubsection*{Question 1}
-
-NEED TO TAKE M = L + 1 SOMEWHERE IN THIS PROJECT. IN QUESTION 4? - 
-WHAT IS THE DETERMINANT IN PROGRAM A HERE?
-- COULD IT AFFECT ERROR IN QUESTION 3?
 
 Using the binomial expansion, we obtain,
 \begin{flalign*}
@@ -221,15 +217,15 @@ iterative improvement will make no difference since the exact solution
 is found so no more improvements can be made. The determinant of the 
 matrix in this case approaches 0 as $L$ increases. The \texttt{lstsq}
 function which I have used as the Python equivalent of \texttt{mldivide} 
-finds the least-squares solution of the equation $A\mathbf{x} = \mathbf{b}$. 
+finds the least squares solution of the equation $A\mathbf{x} = \mathbf{b}$. 
 Suppose for some $L$ the determinant of the matrix used to solve equation 
 (4) were 0 and let the least squares solution for the $q_{k}$ be 
 $\mathbf{y}$. Then $\mathbf{b}-A\mathbf{y}$ will be orthogonal to
 $A\mathbf{\delta y}$ for any $\mathbf{\delta y}$. This is because
 for least square problems, we have $A^{T}(\mathbf{b}-A\mathbf{y}) = 0$ 
 which can be derived by differentiation of $||\mathbf{b}-A\mathbf{y}||^{2}$. 
-Hence, no more improvements can be made in this case either.
-\\
+Hence, no more improvements can be made by iterative improvement in 
+this case either.\\
 
 In addition, the limit on the error is caused my the machine precision, 
 not the solution to equation (4). Thus iterative improvement would have 
@@ -256,7 +252,7 @@ machine precision.
 \subsubsection*{Question 3}
 
 \begin{minipage}{\textwidth}\centering
-	\includegraphics[width=\linewidth]{q3_N=3}
+	\includegraphics[width=0.85\linewidth]{q3_N=3}
 
 	\vspace*{-0.2cm}
 
@@ -327,9 +323,9 @@ much closer estimates while the power series would only diverge further.
 From Figures \ref{q3_fig3} and \ref{q3_fig4}, we see that the error decreases exponentially for $L \leq 11$
 since the graphs are linear for this range of $L$. Beyond this range, the error remains in the same area as 
 it increases and decreases in a zig-zag pattern. The reason the error stops decreasing exponentially is that
-the Pad\'e approximant calculated by Program A is not accurate for large $L$ (i.e. the $q_{k}$ and $p_{k}$ 
-calculated are slighly off). I know that the approximant is inacurate since it should give the same result 
-as the $(2L)^{\text{th}}$ continued fraction from:
+the Pad\'e approximant calculated by Program A is not sufficiently accurate for large $L$ (i.e. the $q_{k}$
+and $p_{k}$ calculated are slighly off). I know that the approximant is inaccurate since it should give the
+same result as the $(2L)^{\text{th}}$ continued fraction from:
 \begin{flalign*}
 	\sqrt{1+x} &= 1 + \frac{ x }{ 1 + \sqrt{1+x} } && \\
 	\implies \sqrt{1+x} &= 1 + \frac{ x }{ 2 + \frac{ x }{ 2 + \frac{ x }{ 2 + ...}}} &&
@@ -354,6 +350,14 @@ arithmetic used for Program A and hence explains why the error stops decreasing 
 % IS BECAUSE WOLFRAM ALPHA GIVES IT EXACTLY (ALTHOUGH HERE HAVE TO SAY I KNOW IT FROM CONTINUED FRACTION
 % BUT WOLFRAM AND CONTINUED FRACTION GIVE THE SAME RESULT SO I KNOW CONTINUED FRACTION IS CORRECT)
 
+It is also worth noting that this limit in accuracy is not related to the fact that the matrix
+for solving the simultaneous equations for the $q_{k}$ has a determinant approaching 0 for
+increasing $L$. For example, for $L = 6$ the matrix in question has determinant 
+$-1.355\times 10^{-20}$. However, when using the approximant $R_{L,L+1}(x)$ to  
+produce plots as shown in Figures \ref{q3_fig3} and \ref{q3_fig4}, the same patterns
+as we see above are observed.
+\\
+
 Overall, we can see that the Pad\'e approximant almost converges to $f_{1}(x)$ for large $x$ despite\ 
 the fact that this is outside the radius of convergence of the power series. However, there is a\ 
 limitation on the accuracy of the estimate you can get where increasing the value of $L$ will not\ 
@@ -363,8 +367,8 @@ improve the result.
 
 \subsubsection*{Question 4}
 
-I first present some graphs which give the error for different L using a diagonal approximant and
-the error for different orders using the power series. This is so that the optimal such L and order
+I first present some graphs which give the error for different $L$ using a diagonal approximant and
+the error for different orders using the power series. This is so that the optimal such $L$ and order
 can be found for calculation across the whole range $0 \leq x \leq 20$.
 
 \begin{minipage}{\textwidth}
@@ -383,6 +387,13 @@ can be found for calculation across the whole range $0 \leq x \leq 20$.
 \end{minipage}
 \vspace{0.5cm}
 
+From Figure \ref{q4_series_change} we can see that for large $x \geq 1$ the error of the power series
+estimates diverges exponentially so the power series is not useful for any order here. On the other
+hand, the graph with $x = 0.1$ demonstrates that the series gives a good estimate for much smaller x
+as the $x^{n}$ terms do not diverge. In particular, the order of $9$ gives the minimum error.
+
+\vspace{0.5cm}
+
 \begin{minipage}{\textwidth}
 	\centering
 	\includegraphics[width=0.49\linewidth]{q4_approx_x=0.1}
@@ -394,27 +405,27 @@ can be found for calculation across the whole range $0 \leq x \leq 20$.
 
 	\vspace*{-0.2cm}
 
-	\captionof{figure}{Plots of $L$ against $\ln(Error)$ for $x = 0.1, 1$ and $20$}
+	\captionof{figure}{Plots of $L$ against $\ln(\text{Error})$ for $x = 0.1, 1$ and $20$
+	including one plot for $R_{L,L}(x)$ and another for $R_{L,L+1}(x)$}
 	\label{q4_approx_change}
 \end{minipage}
 
-\vspace{0.4cm}
-From Figure \ref{q4_series_change} we can see that for large $x \geq 1$ the error of the power series
-estimates diverges exponentially so the power series is not useful for any order here. On the other
-hand, the graph with $x = 0.1$ demonstrates that the series gives a good estimate for much smaller x
-as the $x^{n}$ terms do not diverge. In particular, the order of $9$ gives the minimum error.
-\\
+\vspace{0.6cm}
 
-Figure \ref{q4_approx_change} shows that the Pad\'e approximant can give a relatively small error
-for different values of $x$ in the range $[0, 20]$. The minimum error is given by either $L = 6$ or
-$L = 7$ and taking the diagonal approximant.
+Figure \ref{q4_approx_change} shows that the Pad\'e approximant can give a relatively 
+small error for different values of $x$ in the range $[0, 20]$. We see that the 
+$R_{L,L+1}(x)$ approximant is not much better than the purely diagonal approximant;
+indeed it can be checked that the determinant of the matrix used to solve the
+simultaneous equations for the $q_{k}$ has a very large determinant for all $L$.
+There is a minimum error for both approximants given by either $L = 6$ or
+$L = 7$.
 \\
 
 \begin{minipage}{0.45\textwidth}
 	\centering
 	\includegraphics[width=\linewidth]{q4_series_order=1}
 
-	\vspace*{-0.2cm}
+	\vspace*{-0.3cm}
 
 	\captionof{figure}{Error from the order 1 power series}
 	\label{q4_series_o1}
@@ -424,18 +435,19 @@ $L = 7$ and taking the diagonal approximant.
 	\centering
 	\includegraphics[width=\linewidth]{q4_series_order=9}
 
-	\vspace*{-0.2cm}
+	\vspace*{-0.3cm}
 
 	\captionof{figure}{Error from the order 9 power series}
 	\label{q4_series_o2}
 \end{minipage}
-\vspace{0.5cm}
+
+\vspace{0.3cm}
 
 \begin{minipage}{0.45\textwidth}
 	\centering
 	\includegraphics[width=\linewidth]{q4_approx_L=7}
 
-	\vspace*{-0.2cm}
+	\vspace*{-0.3cm}
 
 	\captionof{figure}{Error of Pad\'e approximant with $L = 7$
 	in range the [0,20]}
@@ -446,7 +458,7 @@ $L = 7$ and taking the diagonal approximant.
 	\centering
 	\includegraphics[width=\linewidth]{q4_approx_zoomed}
 
-	\vspace*{-0.2cm}
+	\vspace*{-0.3cm}
 
 	\captionof{figure}{Error of Pad\'e approximant with $L = 7$ 
 	zoomed in on the range [0,1]}
@@ -626,7 +638,7 @@ the real axis.
 \\
 
 \vspace{0.4cm}
-\underline{‘Anomalous’ poles and zeros}
+\underline{`Anomalous' poles and zeros}
 
 \vspace{0.5cm}
 All of the poles and zeros of $f_{4}(x)$ shown in Figures \ref{q5_fig1_poles} and \ref{q5_fig1_zeros}
@@ -635,10 +647,10 @@ are anomalous. The same is true of $f_{5}(x)$, excluding the real pole close to 
 
 For $f_{1}(x)$ we have anomalous poles and zeros when these values do not lie along the branch cut
 of the negative real axis, i.e.$~$they are positive real or complex. The first time we get such an
-anomalous result is for $L = 12$ where there is a pole at $x = 1.126575649706596$ and a zero at 
-$x = 1.1265756497065988$. Next, I will present figures for results of the poles but the exact same 
-kind of results are obtained examining the zeros. Figure \ref{q5_fig3} gives an overview of where 
-the poles/zeros are located with the different colours corresponding to different values of $L$.
+anomalous result is for $L = 12$ where there is a pole and zero at $x = 1.1276$. Next, I will present 
+figures for results of the poles but the exact same kind of results are obtained examining the zeros. 
+Figure \ref{q5_fig3} gives an overview of where the poles/zeros are located with the different 
+colours corresponding to different values of $L$.
 
 \vspace{0.3cm}
 \begin{minipage}{\textwidth}
@@ -672,8 +684,8 @@ We then focus on the anomalous poles which have a real part near 0 as in Figure 
 
 \vspace{0.4cm}
 
-We can see from Figure \ref{q5_fig4_L=50} that for large L we get close to a unit circle
-of poles/zeros for the diagonal Pad\'e approximant of $f_{1}(x)$. As L becomes larger, this
+We can see from Figure \ref{q5_fig4_L=50} that for large $L$ we get close to a unit circle
+of poles/zeros for the diagonal Pad\'e approximant of $f_{1}(x)$. As $L$ becomes larger, this
 circle gets closer to -1 and there are always points close to 1.
 \\
 
@@ -692,20 +704,87 @@ from the actual value for $x<-1.5$.\\
 
 	\vspace{-0.2cm}
 
-	\captionof{figure}{Graph with $f_{6}(x)$ and two different approximants}
+	\captionof{figure}{Graph with $f_{6}(x)$ and diagonal approximants for 
+	$L=8$ and $L=15$}
 	\label{q5_fig5}
 \end{minipage}
 \\
 
 \vspace{0.3cm}
 
-We see that for negative reals beyond about $x=-3$, the approximant is the negative 
-of what it should be. For odd L this is because the leading coefficients have 
-opposite signs e.g. for $L = 15$ we have ...\\
+We see that for negative reals beyond about $x=-3$, the approximant is the close to the 
+negative of $f_{1}(x)$.
 
-For the even case we also have negative result because ...
-Explain with leading coeffieient for odd (pole for even?)
+\begin{minipage}{\textwidth}
+	\centering
+	\includegraphics[width=\linewidth]{q5_fig6}
 
+	\vspace{-0.2cm}
 
+	\captionof{figure}{Graph with $f_{6}(x)$ and diagonal approximants for 
+	$L=5$, $L=10$ and $L=17$}
+	\label{q5_fig6}
+\end{minipage}
+\vspace{0.3cm}
+
+Figure \ref{q5_fig6} reveals that these approixmants are indeed very close
+to $f_{1}(x)$. It also demonstrates that both even and odd values of $L$
+can give these close approximants. Since the curve of $R_{5,5}(x)$ is much 
+further from $-f_{1}(x)$ than the other two curves, the most important
+factor affecting the accuracy is then how large the value of $L$ is.
+From our examination of the poles of approximants of $f_{6}(x)$, we can 
+see that we may use these approximants for negative $x<3$ up to a very 
+large negative pole for $L$ even while for $L$ odd no such pole exists.
+%For odd $L$ this is because the leading coefficients have 
+% opposite signs e.g. for $L = 15$ we have ... IDK\\
+
+% For the even case we also have negative result because ...
+% Explain with leading coeffieients for odd (pole for even?)
+% Can't think why it would be the negative actually
+
+\pagebreak
+\textbf{Program\textunderscore A.py for Programming Task}\centering\label{Program_A}
+\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Program_A.py}
+\vspace{2cm}
+
+\pagebreak
+\textbf{Program\textunderscore B.py for Programming Task}\centering\label{Program_B}
+\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Program_B.py}
+\vspace{2cm}
+
+\pagebreak
+\textbf{Question\textunderscore 1.py for Question 1}\centering\label{Question_1}
+\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_1.py}
+\vspace{2cm}
+
+\pagebreak
+\textbf{Question\textunderscore 1.py for Question 2}\centering\label{Question_2}
+\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_2.py}
+\vspace{2cm}
+
+\pagebreak
+\textbf{Question\textunderscore 2.py for Question 3}\centering\label{Question_3}
+\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_3.py}
+\vspace{2cm}
+
+\pagebreak
+\textbf{continued\textunderscore fraction.py for Question 3}\centering\label{continued_fraction}
+\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/continued_fraction.py}
+\vspace{2cm}
+
+\pagebreak
+\textbf{Question\textunderscore 4.py for Question 4}\centering\label{Question_4}
+\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_4.py}
+\vspace{2cm}
+
+\pagebreak
+\textbf{Question\textunderscore 5.py for Question 5}\centering\label{Question_5}
+\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_5.py}
+\vspace{2cm}
+
+\pagebreak
+\textbf{Question\textunderscore 5\textunderscore end.py for Question 5}\centering\label{Question_5_end}
+\lstinputlisting[language=Python]{C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_5.py}
+\vspace{2cm}
 
 \end{document}

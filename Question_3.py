@@ -18,10 +18,12 @@ def series_estimate(N, x):
 
 def diagonal_approximant(L, x):
     c_vector = np.empty([0], dtype = np.double)
-    for i in range(2*L + 1):
+    for i in range(2*L + 2):
         c_vector = np.append(c_vector, 
             Question_1.find_coefficient(i))
     approximant = approximator(c_vector, L, L)
+    # Can try M = L + 1 in second arg. 
+    # Not any improvements
     return approximant.evaluate_approximant(x)
 
 
@@ -48,6 +50,11 @@ def plot_comparison(N, L):
     plt.show()
 
     plt.plot(2)
+    plt.xticks(fontsize = 20)
+    plt.yticks(fontsize = 20)
+    plt.rc('font', size = 20)
+    plt.xlabel('xlabel', fontsize = 20)
+    plt.ylabel('ylabel', fontsize = 20)
     plt.plot(x_vector, series_vector, color = 'C0', label = 
         ' $y=\sum_{{k=0}}^{{{}}}c_{{k}}x^{{k}}$'.format(N))
     plt.xlabel('$x$')
@@ -62,6 +69,7 @@ class approximant_investigation:
     def __init__(self, chosen_val1, chosen_val2):
         self.chosen_val1 = chosen_val1
         self.chosen_val2 = chosen_val2
+        # chosen_vals are the chosen values of x in question
 
 
     def create_graph(self, x):
@@ -69,9 +77,9 @@ class approximant_investigation:
         plt.rc('font', size = 32)
         plt.grid(linestyle = '--', linewidth = 0.5)
 
-        L_vector = np.arange(0, 21, 1)
+        L_vector = np.arange(0, 15, 1)
         # Can't have L too large or error with x**k at some 
-        # point
+        # point - 'int too large to convert to float'
         approximant_vector = []
         for i in range(len(L_vector)):
             approximant_vector.append(
@@ -96,7 +104,7 @@ class approximant_investigation:
 
 
 if __name__ == '__main__':
-    # plot_comparison(3, 50) # N, L, fig_index
+    # plot_comparison(3, 50) # N, L
 
     pade_test = approximant_investigation(10, 100)
     pade_test.display_graphs()

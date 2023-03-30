@@ -74,7 +74,8 @@ def plot_approximant_error(y):
     # switch x_vector depending on graph desired
     plt.rc('font', size = 20)
     plt.grid(linestyle = '--', linewidth = 0.5)
-    plt.plot(x_vector, np.log(y[:len(x_vector)]), color = 'C0')
+    plt.plot(x_vector, np.log(y[:len(x_vector)]), \
+             color = 'C0')
     # plt.plot(x_vector, y[:len(x_vector)], color = 'C0')
     # plot without log for [0, 20] range
     plt.xlabel('$x$')
@@ -96,10 +97,15 @@ def get_series_error_change(x, actual_value, order_vector):
     return series_error
 
 
-def get_approximant_error_change(x, actual_value, L_vector):
+def get_approximant_error_change(x, actual_value, L_vector,
+                                 change_M = False):
+    # change_M True means take M = L + 1
     approximant_error = np.empty([0])
     for L in range(len(L_vector)):
-        approximant = generate_approximant(L + 1, L + 1)
+        if change_M:
+            approximant = generate_approximant(L + 1, L + 2)
+        else:
+            approximant = generate_approximant(L + 1, L + 1)
         approximant_result = approximant.\
             evaluate_approximant(x)
         approximant_error = np.append( approximant_error, 
@@ -121,7 +127,7 @@ def plot_series_error_change():
         plt.plot(order_vector, np.log(y), color = 'C3')
         plt.ylabel('ln(Error) for ' '$x = {}$'.\
                         format(x_list[index]))
-        plt.xlabel('$Order$')
+        plt.xlabel('Order')
         plt.tight_layout()
         plt.xticks(order_vector)
         plt.show()
@@ -137,21 +143,26 @@ def plot_approximant_error_change():
         y = get_approximant_error_change(x_list[index], 
                                 numerical_results[index],
                                 L_vector)
-        plt.rc('font', size = 12)
-        plt.plot(L_vector, np.log(y))
+        y_1 = get_approximant_error_change(x_list[index], 
+                                numerical_results[index],
+                                L_vector, change_M = True)
+        plt.rc('font', size = 9)
+        plt.plot(L_vector, np.log(y), label = '$M = L$')
+        plt.plot(L_vector, np.log(y_1), label = '$M = L+1$')
         plt.xlabel('$L$')
         plt.ylabel('ln(Error) for ' '$x = {}$'.\
                         format(x_list[index]))
         plt.tight_layout()
         plt.xticks(L_vector)
+        plt.legend(loc = 'best')
         plt.show()
 
 
 if __name__ == '__main__':
     #plot_series_error_change()
-    #plot_approximant_error_change()
+    plot_approximant_error_change()
 
     series_error, approximant_error = get_error(1, 7, 7)
     # change order from 1 to 9
     #plot_series_error(series_error)
-    plot_approximant_error(approximant_error)
+    #plot_approximant_error(approximant_error)

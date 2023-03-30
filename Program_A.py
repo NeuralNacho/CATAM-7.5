@@ -47,8 +47,10 @@ class approximator:
         
         c_matrix = np.array(np.vstack(rows), 
                             dtype=np.float64)
-        # print(c_matrix)
-        # print(np.linalg.det(c_matrix))
+        print('L = ', self.L)
+        print('c_matrix', c_matrix)
+        print('det = ', np.linalg.det(c_matrix))
+        print('c_target = ', c_target)
 
         q_vector = np.linalg.lstsq(c_matrix, c_target, 
                                        rcond = None)[0]
@@ -104,9 +106,10 @@ if __name__ == '__main__':
     c_vector = np.empty([0], dtype = np.double)
     # Can then append the coefficients to this list
 
-    c_vector = np.append(c_vector, [0, 1, 0, 1/3, 0, 2/15, 0, 17/315, 0])
+    c_vector = np.append(c_vector, [0, 1, 0, 1/3, 0, 2/15, \
+                        0, 17/315, 0, 62/2835, 0, 0]) # tan
     L = 3
-    M = 4
+    M = 6
 
     approximant = approximator(c_vector, L, M)
 

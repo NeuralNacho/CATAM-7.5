@@ -16,27 +16,32 @@ def R_LL(x, L):
         c_vector = np.append(c_vector, 
                 Question_5.find_f6_coefficient(i))
     approximant = approximator(c_vector, L, L)
+    print(L, approximant.p_vector)
+    print(L, approximant.q_vector)
     return approximant.evaluate_approximant(x)
 
 
 def plot_graph1(L):
-    x = np.linspace(-7.5, 7.5, 1000)
+    x = np.linspace(-20, 7.5, 1000)
 
-    y_approx_even = R_LL(x, 8)
-    y_approx_odd = R_LL(x, 9)
+    y_approx_even = R_LL(x, 10)
+    y_approx_odd = R_LL(x, 5)
+    y_approx_odd_2 = R_LL(x, 17)
     y_actual = np.vectorize(f_6)(x)
 
     plt.rc('font', size = 28)
     plt.grid(linestyle = '--', linewidth = 0.5)
-    plt.plot(x, y_actual, color = 'black', 
-                label = '$y = f_{1}(x)$')
-    plt.plot(x, y_approx_even, color = 'red', 
-                label = '$y = R_{8,8}(x)$')
+    plt.plot(x, -y_actual, color = 'black', 
+                label = '$y = -f_{1}(x)$')
     plt.plot(x, y_approx_odd, color = 'blue', 
-                label = '$y = R_{15,15}(x)$')
+                label = '$y = R_{5,5}(x)$')
+    plt.plot(x, y_approx_even, color = 'red', 
+                label = '$y = R_{10,10}(x)$')
+    plt.plot(x, y_approx_odd_2, color = 'green', 
+                label = '$y = R_{17,17}(x)$')
     plt.xlabel('$x$')
     plt.ylabel('$y$')
-    plt.ylim(-8, 8)
+    plt.ylim(-20, 8)
     plt.tight_layout()
     plt.legend(loc = 'best')
     plt.show()
