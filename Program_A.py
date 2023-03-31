@@ -106,10 +106,10 @@ if __name__ == '__main__':
     c_vector = np.empty([0], dtype = np.double)
     # Can then append the coefficients to this list
 
-    c_vector = np.append(c_vector, [0, 1, 0, 1/3, 0, 2/15, \
-                        0, 17/315, 0, 62/2835, 0, 0]) # tan
-    L = 3
-    M = 6
+    c_vector = np.append(c_vector, [0, 1, 0, -1/6, 0, 1/120, 0, -1/5040, 0]) # sin
+    #[0, 1, 0, 1/3, 0, 2/15, 0, 17/315, 0, 62/2835, 0, 0] # tan
+    L = 2
+    M = 2
 
     approximant = approximator(c_vector, L, M)
 

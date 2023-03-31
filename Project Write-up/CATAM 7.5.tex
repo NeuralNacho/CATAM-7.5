@@ -48,9 +48,18 @@
 The programs written for this task can be found on pages \pageref{Program_A} and
 \pageref{Program_B}. From the numpy package in Python, I use the \texttt{lstsq} function
 as an equivalent of \texttt{mldivide} from Matlab. I first tested Program A for basic
-functions such as $f(x) = 0$ with different values of $L$ and $M$. Then I carried out testing
+functions such as $f(x) = 0$ with different values of $L$ and $M$, verifying that
+$p_{k} = 0 ~ \forall ~ k$. Then I carried out testing
 with more complex functions such as $f(x) = \sin(x)$ and confirming the $O(x^{L+M+1})$
-accuracy via polynomial division of the results.
+accuracy via polynomial division of the results. For instance, with
+$f(x) = \sin(x)$, $L = 2$ and $M = 2$ we obtain,
+\begin{align*}
+	R_{2,3}(x) & = \frac{x}{1+0.166666667x^{2}}\\ 
+	& = \frac{x}{1+\frac{x^{2}}{6}} \\
+	& = x - \frac{x^{2}}{6} + \frac{x^{5}}{36}+\mathcal{O}(x^{7}). \qed
+\end{align*}
+
+% Pade[2,3] FAILS !? - Det is 0 so no solution to q_vector :)
 
 
 \subsubsection*{Question 1}
@@ -161,6 +170,7 @@ the ratio of $R_{N}(1)$ and $R_{N+1}(1)$ shows that incrementing $N$ by $1$ decr
 almost exactly $\frac{ 2N+1 }{ 2N+4 }$. Hence the larger N is, the less the percentage decrease of error \
 is for increasing N.
 
+\newpage
 
 \subsubsection*{Question 2}
 
@@ -356,6 +366,9 @@ increasing $L$. For example, for $L = 6$ the matrix in question has determinant
 $-1.355\times 10^{-20}$. However, when using the approximant $R_{L,L+1}(x)$ to  
 produce plots as shown in Figures \ref{q3_fig3} and \ref{q3_fig4}, the same patterns
 as we see above are observed.
+% BUT R_{L,L+1} also has determiant 0. Remember Pade[2,3]sin(x) for you also disagrees with
+% Wolfram and once q goes wrong so does p. okay but continued fraction would give more
+% accurate approximant so still can't be just determinant
 \\
 
 Overall, we can see that the Pad\'e approximant almost converges to $f_{1}(x)$ for large $x$ despite\ 
@@ -364,6 +377,7 @@ limitation on the accuracy of the estimate you can get where increasing the valu
 improve the result.
 % ONE MORE IMPLICATION
 
+\newpage
 
 \subsubsection*{Question 4}
 
