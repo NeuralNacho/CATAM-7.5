@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2022.9.9)  1 APR 2023 00:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.2) (preloaded format=pdflatex 2022.9.9)  26 APR 2023 03:12
 entering extended mode
 **"c:/Users/angus/OneDrive/Documents/CATAM 7.5/Project Write-up/CATAM 7.5.tex"
 (c:/Users/angus/OneDrive/Documents/CATAM 7.5/Project Write-up/CATAM 7.5.tex
@@ -333,82 +333,87 @@ Overfull \hbox (9.8266pt too wide) detected at line 145
 <q1_fig2.png, id=24, 1274.51157pt x 645.16031pt>
 File: q1_fig2.png Graphic file (type png)
 <use q1_fig2.png>
-Package pdftex.def Info: q1_fig2.png  used on input line 161.
+Package pdftex.def Info: q1_fig2.png  used on input line 162.
 (pdftex.def)             Requested size: 440.84746pt x 223.1515pt.
  [3 <./q1_fig2.png>]
 <q2_fig1.png, id=29, 1240.635pt x 639.89063pt>
 File: q2_fig1.png Graphic file (type png)
 <use q2_fig1.png>
-Package pdftex.def Info: q2_fig1.png  used on input line 207.
+Package pdftex.def Info: q2_fig1.png  used on input line 208.
 (pdftex.def)             Requested size: 440.84746pt x 227.37268pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--224
+Underfull \hbox (badness 10000) in paragraph at lines 217--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--239
+Underfull \hbox (badness 10000) in paragraph at lines 226--240
 
  []
 
 [4 <./q2_fig1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 240--244
+Underfull \hbox (badness 10000) in paragraph at lines 241--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 245--254
+Underfull \hbox (badness 10000) in paragraph at lines 246--256
 
  []
 
 <q3_N=3.png, id=34, 792.71156pt x 583.42969pt>
 File: q3_N=3.png Graphic file (type png)
 <use q3_N=3.png>
-Package pdftex.def Info: q3_N=3.png  used on input line 265.
+Package pdftex.def Info: q3_N=3.png  used on input line 267.
 (pdftex.def)             Requested size: 374.72302pt x 275.79662pt.
 <q3_L=3.png, id=35, 1209.76968pt x 642.90187pt>
 File: q3_L=3.png Graphic file (type png)
 <use q3_L=3.png>
-Package pdftex.def Info: q3_L=3.png  used on input line 275.
+Package pdftex.def Info: q3_L=3.png  used on input line 277.
 (pdftex.def)             Requested size: 352.6793pt x 187.41776pt.
 <q3_L=10.png, id=36, 1209.01688pt x 642.90187pt>
 File: q3_L=10.png Graphic file (type png)
 <use q3_L=10.png>
-Package pdftex.def Info: q3_L=10.png  used on input line 281.
+Package pdftex.def Info: q3_L=10.png  used on input line 283.
 (pdftex.def)             Requested size: 352.6793pt x 187.53548pt.
 [5 <./q3_N=3.png> <./q3_L=3.png>]
 <q3_L=50.png, id=42, 1209.01688pt x 642.14906pt>
 File: q3_L=50.png Graphic file (type png)
 <use q3_L=50.png>
-Package pdftex.def Info: q3_L=50.png  used on input line 287.
+Package pdftex.def Info: q3_L=50.png  used on input line 289.
 (pdftex.def)             Requested size: 352.6793pt x 187.31587pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--302
+Underfull \hbox (badness 10000) in paragraph at lines 299--304
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 303--311
+Underfull \hbox (badness 10000) in paragraph at lines 305--313
 
  []
 
 <q3_fig3.png, id=43, 1035.87pt x 511.15968pt>
 File: q3_fig3.png Graphic file (type png)
 <use q3_fig3.png>
-Package pdftex.def Info: q3_fig3.png  used on input line 313.
+Package pdftex.def Info: q3_fig3.png  used on input line 315.
 (pdftex.def)             Requested size: 440.84746pt x 217.54027pt.
 <q3_fig4.png, id=44, 1000.48781pt x 493.845pt>
 File: q3_fig4.png Graphic file (type png)
 <use q3_fig4.png>
-Package pdftex.def Info: q3_fig4.png  used on input line 323.
+Package pdftex.def Info: q3_fig4.png  used on input line 325.
 (pdftex.def)             Requested size: 440.84746pt x 217.60141pt.
 [6 <./q3_L=10.png> <./q3_L=50.png> <./q3_fig3.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 344--354
+Underfull \hbox (badness 10000) in paragraph at lines 335--344
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 363--373
+Underfull \hbox (badness 10000) in paragraph at lines 354--364
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 373--383
 
  []
 
@@ -416,85 +421,85 @@ Underfull \hbox (badness 10000) in paragraph at lines 363--373
 <q4_series_x=0.1.png, id=57, 647.41875pt x 490.83376pt>
 File: q4_series_x=0.1.png Graphic file (type png)
 <use q4_series_x=0.1.png>
-Package pdftex.def Info: q4_series_x=0.1.png  used on input line 390.
+Package pdftex.def Info: q4_series_x=0.1.png  used on input line 402.
 (pdftex.def)             Requested size: 216.01767pt x 163.77312pt.
 <q4_series_x=1.png, id=58, 655.69969pt x 504.38437pt>
 File: q4_series_x=1.png Graphic file (type png)
 <use q4_series_x=1.png>
-Package pdftex.def Info: q4_series_x=1.png  used on input line 391.
+Package pdftex.def Info: q4_series_x=1.png  used on input line 403.
 (pdftex.def)             Requested size: 216.01767pt x 166.16258pt.
 <q4_series_x=20.png, id=59, 665.48625pt x 506.6428pt>
 File: q4_series_x=20.png Graphic file (type png)
 <use q4_series_x=20.png>
-Package pdftex.def Info: q4_series_x=20.png  used on input line 395.
+Package pdftex.def Info: q4_series_x=20.png  used on input line 407.
 (pdftex.def)             Requested size: 220.42372pt x 167.8111pt.
 <q4_approx_x=0.1.png, id=60, 325.215pt x 231.86626pt>
 File: q4_approx_x=0.1.png Graphic file (type png)
 <use q4_approx_x=0.1.png>
-Package pdftex.def Info: q4_approx_x=0.1.png  used on input line 413.
+Package pdftex.def Info: q4_approx_x=0.1.png  used on input line 425.
 (pdftex.def)             Requested size: 216.01767pt x 154.01575pt.
 <q4_approx_x=1.png, id=61, 319.94531pt x 235.63031pt>
 File: q4_approx_x=1.png Graphic file (type png)
 <use q4_approx_x=1.png>
-Package pdftex.def Info: q4_approx_x=1.png  used on input line 414.
+Package pdftex.def Info: q4_approx_x=1.png  used on input line 426.
 (pdftex.def)             Requested size: 216.01767pt x 159.09392pt.
 <q4_approx_x=20.png, id=62, 333.49594pt x 259.7203pt>
 File: q4_approx_x=20.png Graphic file (type png)
 <use q4_approx_x=20.png>
-Package pdftex.def Info: q4_approx_x=20.png  used on input line 418.
+Package pdftex.def Info: q4_approx_x=20.png  used on input line 430.
 (pdftex.def)             Requested size: 220.42372pt x 171.66559pt.
  [8 <./q4_series_x=0.1.png> <./q4_series_x=1.png> <./q4_series_x=20.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 429--437
+Underfull \hbox (badness 10000) in paragraph at lines 441--449
 
  []
 
 <q4_series_order=1.png, id=69, 440.39531pt x 316.93407pt>
 File: q4_series_order=1.png Graphic file (type png)
 <use q4_series_order=1.png>
-Package pdftex.def Info: q4_series_order=1.png  used on input line 440.
+Package pdftex.def Info: q4_series_order=1.png  used on input line 452.
 (pdftex.def)             Requested size: 198.38pt x 142.76408pt.
 <q4_series_order=9.png, id=70, 443.40656pt x 317.68687pt>
 File: q4_series_order=9.png Graphic file (type png)
 <use q4_series_order=9.png>
-Package pdftex.def Info: q4_series_order=9.png  used on input line 450.
+Package pdftex.def Info: q4_series_order=9.png  used on input line 462.
 (pdftex.def)             Requested size: 198.38pt x 142.13368pt.
 <q4_approx_L=7.png, id=71, 441.90094pt x 318.43968pt>
 File: q4_approx_L=7.png Graphic file (type png)
 <use q4_approx_L=7.png>
-Package pdftex.def Info: q4_approx_L=7.png  used on input line 462.
+Package pdftex.def Info: q4_approx_L=7.png  used on input line 474.
 (pdftex.def)             Requested size: 198.38pt x 142.95639pt.
 <q4_approx_zoomed.png, id=72, 440.39531pt x 317.68687pt>
 File: q4_approx_zoomed.png Graphic file (type png)
 <use q4_approx_zoomed.png>
-Package pdftex.def Info: q4_approx_zoomed.png  used on input line 473.
+Package pdftex.def Info: q4_approx_zoomed.png  used on input line 485.
 (pdftex.def)             Requested size: 211.60489pt x 152.64308pt.
 [9 <./q4_approx_x=0.1.png> <./q4_approx_x=1.png> <./q4_approx_x=20.png> <./q4_series_order=1.png> <./q4_series_order=9.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 483--490
+Underfull \hbox (badness 10000) in paragraph at lines 495--502
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--504
+Underfull \hbox (badness 10000) in paragraph at lines 513--516
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 505--509
+Underfull \hbox (badness 10000) in paragraph at lines 517--521
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 510--515
+Underfull \hbox (badness 10000) in paragraph at lines 522--527
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 516--521
+Underfull \hbox (badness 10000) in paragraph at lines 528--533
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--530
+Underfull \hbox (badness 10000) in paragraph at lines 538--542
 
  []
 
@@ -502,117 +507,119 @@ Underfull \hbox (badness 10000) in paragraph at lines 526--530
 <q5_fig1_poles.png, id=86, 1115.66812pt x 561.59813pt>
 File: q5_fig1_poles.png Graphic file (type png)
 <use q5_fig1_poles.png>
-Package pdftex.def Info: q5_fig1_poles.png  used on input line 543.
+Package pdftex.def Info: q5_fig1_poles.png  used on input line 555.
 (pdftex.def)             Requested size: 440.84746pt x 221.91023pt.
 <q5_fig1_zeros.png, id=87, 1117.17375pt x 561.59813pt>
 File: q5_fig1_zeros.png Graphic file (type png)
 <use q5_fig1_zeros.png>
-Package pdftex.def Info: q5_fig1_zeros.png  used on input line 551.
+Package pdftex.def Info: q5_fig1_zeros.png  used on input line 563.
 (pdftex.def)             Requested size: 440.84746pt x 221.6103pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 557--562
+Underfull \hbox (badness 10000) in paragraph at lines 569--574
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 567--574
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 579--587
+Underfull \hbox (badness 10000) in paragraph at lines 579--586
 
  []
 
 [11 <./q5_fig1_poles.png> <./q5_fig1_zeros.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 592--600
+
+ []
+
 <q5_fig2_v2.png, id=93, 931.22906pt x 511.9125pt>
 File: q5_fig2_v2.png Graphic file (type png)
 <use q5_fig2_v2.png>
-Package pdftex.def Info: q5_fig2_v2.png  used on input line 590.
+Package pdftex.def Info: q5_fig2_v2.png  used on input line 603.
 (pdftex.def)             Requested size: 396.76001pt x 218.10281pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 599--603
+Underfull \hbox (badness 10000) in paragraph at lines 612--616
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 608--613
+Underfull \hbox (badness 10000) in paragraph at lines 621--626
 
  []
 
 
-Overfull \hbox (0.8161pt too wide) in paragraph at lines 614--645
+Overfull \hbox (0.8161pt too wide) in paragraph at lines 627--658
 []$[]$   $[]$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 614--645
+Underfull \hbox (badness 10000) in paragraph at lines 627--658
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 646--653
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 658--661
+Underfull \hbox (badness 10000) in paragraph at lines 659--666
 
  []
 
 [12 <./q5_fig2_v2.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 672--676
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 677--682
+
+ []
+
 <q5_fig3.png, id=99, 1129.97156pt x 565.36218pt>
 File: q5_fig3.png Graphic file (type png)
 <use q5_fig3.png>
-Package pdftex.def Info: q5_fig3.png  used on input line 672.
+Package pdftex.def Info: q5_fig3.png  used on input line 691.
 (pdftex.def)             Requested size: 440.84746pt x 220.568pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 670--680
+Underfull \hbox (badness 10000) in paragraph at lines 689--699
 
  []
 
 <q5_fig4_L=20.png, id=100, 634.62094pt x 513.41812pt>
 File: q5_fig4_L=20.png Graphic file (type png)
 <use q5_fig4_L=20.png>
-Package pdftex.def Info: q5_fig4_L=20.png  used on input line 688.
+Package pdftex.def Info: q5_fig4_L=20.png  used on input line 707.
 (pdftex.def)             Requested size: 224.82977pt x 181.89258pt.
 <q5_fig4_L=50.png, id=101, 614.295pt x 537.50812pt>
 File: q5_fig4_L=50.png Graphic file (type png)
 <use q5_fig4_L=50.png>
-Package pdftex.def Info: q5_fig4_L=50.png  used on input line 689.
+Package pdftex.def Info: q5_fig4_L=50.png  used on input line 708.
 (pdftex.def)             Requested size: 211.60489pt x 185.15344pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 686--698
+Underfull \hbox (badness 10000) in paragraph at lines 705--717
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 701--705
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 710--714
-
- []
-
-<q5_fig5.png, id=102, 1118.67938pt x 536.0025pt>
-File: q5_fig5.png Graphic file (type png)
-<use q5_fig5.png>
-Package pdftex.def Info: q5_fig5.png  used on input line 717.
-(pdftex.def)             Requested size: 440.84746pt x 211.22385pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 715--726
+Underfull \hbox (badness 10000) in paragraph at lines 720--724
 
  []
 
 [13 <./q5_fig3.png> <./q5_fig4_L=20.png> <./q5_fig4_L=50.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 730--734
+
+ []
+
+<q5_fig5.png, id=108, 1118.67938pt x 536.0025pt>
+File: q5_fig5.png Graphic file (type png)
+<use q5_fig5.png>
+Package pdftex.def Info: q5_fig5.png  used on input line 737.
+(pdftex.def)             Requested size: 440.84746pt x 211.22385pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 735--746
+
+ []
+
 <q5_fig6.png, id=109, 1051.67906pt x 534.49687pt>
 File: q5_fig6.png Graphic file (type png)
 <use q5_fig6.png>
-Package pdftex.def Info: q5_fig6.png  used on input line 734.
+Package pdftex.def Info: q5_fig6.png  used on input line 756.
 (pdftex.def)             Requested size: 440.84746pt x 224.0549pt.
- [14 <./q5_fig5.png> <./q5_fig6.png>] (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+[14 <./q5_fig5.png> <./q5_fig6.png>] (C:\Users\angus\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Program_A.py
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 38.
@@ -628,17 +635,12 @@ File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 41.
  [15]
-Overfull \hbox (137.25154pt too wide) in paragraph at lines 109--110
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (3.30177pt too wide) in paragraph at lines 110--111
+Overfull \hbox (3.30177pt too wide) in paragraph at lines 111--112
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [16]) [17] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Program_B.py) [18] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_1.py [19] [20]) [21] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_2.py [22]) [23] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/Question_3.py [24]) [25] (C:/Users/angus/OneDrive/Documents/CATAM 7.5/continued_fraction.py
-Overfull \hbox (3.30177pt too wide) in paragraph at lines 43--45
+Overfull \hbox (17.40175pt too wide) in paragraph at lines 43--45
 [][][][][][][][][][][][][][][][] 
  []
 
@@ -652,7 +654,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  55i,10n,63p,346b,1802s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\angus\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcti1200.pk> <C:\Users\angus\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/angus/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "CATAM 7.5.pdf" (38 pages, 1454200 bytes).
+Output written on "CATAM 7.5.pdf" (38 pages, 1455442 bytes).
 PDF statistics:
  254 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

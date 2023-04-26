@@ -40,7 +40,7 @@ def diagonal_approximant(L):
         c_vector = np.append(c_vector, 
             Question_1.find_coefficient(i))
     approximant = approximator(c_vector, L, L)
-    print(math.sqrt(11) - approximant.evaluate_approximant(10))
+    print(math.sqrt(101) - approximant.evaluate_approximant(100))
 
-diagonal_approximant(15)
-print( math.sqrt(11) - continued_fraction(15, 10))
+diagonal_approximant(30)
+print( math.sqrt(101) - continued_fraction(30, 100))

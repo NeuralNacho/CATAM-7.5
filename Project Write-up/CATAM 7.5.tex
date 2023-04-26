@@ -50,13 +50,13 @@ The programs written for this task can be found on pages \pageref{Program_A} and
 as an equivalent of \texttt{mldivide} from Matlab. I first tested Program A for basic
 functions such as $f(x) = 0$ with different values of $L$ and $M$, verifying that
 $p_{k} = 0 ~ \forall ~ k$. Then I carried out testing
-with more complex functions such as $f(x) = \sin(x)$ and confirming the $O(x^{L+M+1})$
+with more complex functions, such as $f(x) = \sin(x)$, and confirmed the $O(x^{L+M+1})$
 accuracy via polynomial division of the results. For instance, with
 $f(x) = \sin(x)$, $L = 2$ and $M = 2$ we obtain,
 \begin{align*}
 	R_{2,3}(x) & = \frac{x}{1+0.166666667x^{2}}\\ 
 	& = \frac{x}{1+\frac{x^{2}}{6}} \\
-	& = x - \frac{x^{2}}{6} + \frac{x^{5}}{36}+\mathcal{O}(x^{7}). \qed
+	& = x - \frac{x^{3}}{6} + \frac{x^{5}}{36}+\mathcal{O}(x^{7}). \qed
 \end{align*}
 
 % Pade[2,3] FAILS !? - Det is 0 so no solution to q_vector :)
@@ -71,7 +71,7 @@ Using the binomial expansion, we obtain,
 with the following formula for the coefficients,
 \begin{flalign*}
 	c_{0} = 1, \quad c_{1} = \frac{1}{2}, \quad c_{k} = \frac{ (-1)^{k-1}(2k-3)! }{ 2^{2k-2}k!(k-2)! } \text{ for } \ 
-	k \geq 1. &&
+	k \geq 2. &&
 \end{flalign*}
 
 The radius of convergence can be found via the ratio test.
@@ -81,11 +81,11 @@ The radius of convergence can be found via the ratio test.
 	& = 1
 \end{flalign*}
 This means that the power series will only provide a useful estimate
-in the disk of radius 1 centred at 0 in the complex plane. Also, the 
-further from 0 you go, the more terms of the power series are required 
+in the disk of radius 1 centred at 0 in the complex plane. Also, as you
+go further away from 0, more terms of the power series are required 
 for an equally precise result. Since a Pad\'e approximant approximates
-the power series we would expect approximants with a higher value of
-$L+M+1$ to be much more useful further from 0 (and potentially beyond 1).
+the power series, we would expect approximants with a higher value of
+$L+M+1$ to be more useful. % further from 0 (and potentially beyond 1).
 \\
 %THIS MEANS that the Pad\'e APPROXIMANT will only be useful within the 
 %disk of radius 1 centred at 0 in the complex plane. Also, the further
@@ -153,6 +153,7 @@ And for large $N > 80$ the following overestimate is more accurate:
 	|R_{N}(1)|  \approx \frac{ 0.505 }{ (2N+2)\sqrt{2N} }
 \end{flalign*}
 
+Overall, we can see that the error is $\mathcal{O}(n^{-3/2})$.
 Figure \ref{q1_fig2} illustrates (\ref{q1_eq2}) as an error bound. 
 We can see that this gives an accurate approximation of the error.
 
@@ -186,11 +187,11 @@ for different values of $L$.
 	\multicolumn{1}{|c|}{0}   & \multicolumn{1}{c|}{0.41421356237309515}    \\ \hline
 	\multicolumn{1}{|c|}{1}   & \multicolumn{1}{c|}{0.014213562373095234}   \\ \hline
 	\multicolumn{1}{|c|}{2}   & \multicolumn{1}{c|}{0.00042045892481934466} \\ \hline
-	\multicolumn{1}{|c|}{3}   & \multicolumn{1}{c|}{1.2378941142587863e-05} \\ \hline
+	\multicolumn{1}{|c|}{3}   & 1.237894114258786e-05						 \\ \hline
 	\multicolumn{1}{|c|}{4}   & 3.644035522221145e-07                       \\ \hline
 	\multicolumn{1}{|c|}{5}   & 1.072704058913132e-08                       \\ \hline
-	\multicolumn{1}{|c|}{6}   & 3.1577518377901015e-10                      \\ \hline
-	\multicolumn{1}{|c|}{7}   & 9.29567534058151e-12                        \\ \hline
+	\multicolumn{1}{|c|}{6}   & 3.157751837790101e-10                      \\ \hline
+	\multicolumn{1}{|c|}{7}   & 9.295675340581510e-12                        \\ \hline
 	\multicolumn{1}{|c|}{8}   & 2.737809978725636e-13                       \\ \hline
 	\multicolumn{1}{|c|}{9}   & 7.993605777301127e-15                       \\ \hline
 	10                        & 4.440892098500626e-16                       \\ \hline
@@ -237,8 +238,8 @@ which can be derived by differentiation of $||\mathbf{b}-A\mathbf{y}||^{2}$.
 Hence, no more improvements can be made by iterative improvement in 
 this case either.\\
 
-In addition, the limit on the error is caused my the machine precision, 
-not the solution to equation (4). Thus iterative improvement would have 
+In addition, the limit on the error is caused by the machine precision, 
+not the solution to equation (4). Thus, iterative improvement would have 
 no effect on the minimum error.
 \\
 
@@ -248,14 +249,15 @@ series estimate of $\sqrt{2}$ for the same number of matching terms.
 For instance, with $L = 5$, the error of the Pad\'e approximant is $1.07 \times 10^{-8}$ while for\ 
 $N=10$ the error from the partial sum is $4.28 \times 10^{-2}$. This is surprising because using the same\
 amount of information, a much more accurate estimate is obtained. This can be explained by the fact that\ 
-as we approach the radius of convergence the error power series expansion of $f_{1}(x)$ diverges at a\
+as we approach the radius of convergence the error term from the
+power series expansion of $f_{1}(x)$ diverges at a\
 faster rate than the error term from the power series expansion of $R_{L,L}(x)$.
 \\
 
 It is then clear that the Pad\'e approximant should be used as an estimate of $\sqrt{2}$ to specified accuracy\
 in all cases. The error estimation (\ref{q1_eq2}) shows that to have an error of $2.22\times10^{-16}$, which\ 
 only requires $L=11$ for the Pad\'e approximant, you would need $N$ to be close to 100,000. Even if you wanted\ 
-more accuracy than this, that wouldn't be possible with 64-bit floats since $2.22\times10^{16}$ is the\ 
+more accuracy than this, that wouldn't be possible with 64-bit floats since $2.22\times10^{-16}$ is the\ 
 machine precision.
 
 
@@ -317,7 +319,7 @@ much closer estimates while the power series would only diverge further.
 	\captionof{figure}{Plot of $L$ against $\ln(Error)$ for $x = 10$}
 	\label{q3_fig3}
 \end{minipage}
-\vspace{1cm}
+\vspace{0.8cm}
 
 \begin{minipage}{\textwidth}\centering
 	\includegraphics[width=\linewidth]{q3_fig4}
@@ -328,11 +330,19 @@ much closer estimates while the power series would only diverge further.
 	\label{q3_fig4}
 \end{minipage}
 
-\vspace{0.4cm}
+\vspace{0.6cm}
 
-From Figures \ref{q3_fig3} and \ref{q3_fig4}, we see that the error decreases exponentially for $L \leq 11$
-since the graphs are linear for this range of $L$. Beyond this range, the error remains in the same area as 
-it increases and decreases in a zig-zag pattern. The reason the error stops decreasing exponentially is that
+From the vertical axes in Figures \ref{q3_fig3} and \ref{q3_fig4}, we see that the error for the
+smaller value of $x=10$ is much less than for $x=100$ for any given value of L. Nevertheless,
+the error varies in exactly the same way in both graphs as $L$ increases.
+From Figures \ref{q3_fig3} and \ref{q3_fig4}, we see that the error decreases exponentially for small $L$
+since the graphs are linearly decrasing initially. The range for exponential 
+decay stops at exactly the same value of $L$ at $L = 11$ for both graphs.
+It is interesting to note that this is the same value of $L$ for which we first
+obtained the machine precision in the table in Question 2. Beyond this range, 
+the error remains in the same zone as it increases and decreases in a zig-zag pattern.\\
+
+The reason the error stops decreasing exponentially is that
 the Pad\'e approximant calculated by Program A is not sufficiently accurate for large $L$ (i.e. the $q_{k}$
 and $p_{k}$ calculated are slighly off). I know that the approximant is inaccurate since it should give the
 same result as the $(2L)^{\text{th}}$ continued fraction from:
@@ -348,8 +358,8 @@ are different; using $L = 15$ as an example, the error from the Pad\'e approxima
 while the error should be $2.77\times 10^{-8}$. This must be due to the limitations of the 64-bit float 
 arithmetic used for Program A and hence explains why the error stops decreasing as $L$ is increased.
 \\
-%Notice that this is the same range for which the error
-%decreased expnentially in Question 2 but in that case the error at $L = 11$ was the machine precision. 
+% Notice that this is the same range for which the error
+% decreased expnentially in Question 2 but in that case the error at $L = 11$ was the machine precision. 
 % THIS IS JUST A COOINCIDENCE
 
 % We can expect this to continue for larger $L$, meaning that we cannot expect the error to be any smaller than
@@ -360,12 +370,12 @@ arithmetic used for Program A and hence explains why the error stops decreasing 
 % IS BECAUSE WOLFRAM ALPHA GIVES IT EXACTLY (ALTHOUGH HERE HAVE TO SAY I KNOW IT FROM CONTINUED FRACTION
 % BUT WOLFRAM AND CONTINUED FRACTION GIVE THE SAME RESULT SO I KNOW CONTINUED FRACTION IS CORRECT)
 
-It is also worth noting that this limit in accuracy is not related to the fact that the matrix
+It is also worth noting that this limit in accuracy is not due directly to the fact that the matrix
 for solving the simultaneous equations for the $q_{k}$ has a determinant approaching 0 for
 increasing $L$. For example, for $L = 6$ the matrix in question has determinant 
-$-1.355\times 10^{-20}$. However, when using the approximant $R_{L,L+1}(x)$ to  
+$-1.355\times 10^{-20}$. In addition, when using the approximant $R_{L,L+1}(x)$ to  
 produce plots as shown in Figures \ref{q3_fig3} and \ref{q3_fig4}, the same patterns
-as we see above are observed.
+as we see above are observed, so no improvements can be found with this appraoch.
 % BUT R_{L,L+1} also has determiant 0. Remember Pade[2,3]sin(x) for you also disagrees with
 % Wolfram and once q goes wrong so does p. okay but continued fraction would give more
 % accurate approximant so still can't be just determinant
@@ -384,6 +394,8 @@ improve the result.
 I first present some graphs which give the error for different $L$ using a diagonal approximant and
 the error for different orders using the power series. This is so that the optimal such $L$ and order
 can be found for calculation across the whole range $0 \leq x \leq 20$.
+
+\vspace{0.5cm}
 
 \begin{minipage}{\textwidth}
 	\centering
@@ -515,7 +527,7 @@ $L = 10: ~~ x \approx -45.021, -11.511,~.....,  -1.052, -1.006$
 
 All poles and zeros are real. Additionally, there are exactly $L$ poles and zeros for $R_{L,L}(x)$ meaning
 that there is one more pole and zero when $L$ is increased by one. All poles and zeros are negative, with
-the least negative values approaching 1 as $L$ is increased. Meanwhile, the largest negative increases as
+the least negative values approaching -1 as $L$ is increased. Meanwhile, the largest negative increases as
 $L$ is increased and the remaining poles/zeros lie between this value and 1.
 \\
 
@@ -524,7 +536,7 @@ $L$ is increased and the remaining poles/zeros lie between this value and 1.
 
 \vspace{0.5cm}
 The Pad\'e approximant of $f_{3}(x)$ is the inverse of the Pad\'e approximant of $f_{1}(x)$. Therefore, the
-poles of this approximant are the zeros of the approximant of $f_{1}(x)$ and vice versa. Hence the results
+poles of this approximant are the zeros of the approximant of $f_{1}(x)$ and vice versa. Hence, the results
 above can be used to describe their behaviour.
 \\
 
@@ -571,6 +583,7 @@ for $L = 4$ and $L = 6$. When there are real poles, there is always one very clo
 for $L = 14$ there are poles -1.00 and 1.48. As $L$ increases above 10, additional poles 
 and zeros are within a distance of 2 to the origin.
 \\
+\newpage{}
 
 \vspace{0.4cm}
 \underline{Poles and zeros of $f_{6}(x)$}
@@ -582,7 +595,7 @@ alternates between positive and negative values for odd and even values of $L$ r
 to increase in magnitude by a factor of approximately 3 each time $L$ is increased by 1. There is a 
 second real pole for even $L$ which is just less than -2. Then for $L > 16$, there can be even more real
 poles than the ones described. The remaining poles tend towards 
-$-\frac{1}{2} \pm \frac{\sqrt{3}}{2}$ as outline in Figure \ref{q5_fig2}.
+$-\frac{1}{2} \pm \frac{\sqrt{3}}{2}i$ as outline in Figure \ref{q5_fig2}.
 \\
 
 \begin{minipage}{\textwidth}
@@ -597,7 +610,7 @@ $-\frac{1}{2} \pm \frac{\sqrt{3}}{2}$ as outline in Figure \ref{q5_fig2}.
 \vspace{0.3cm}
 
 The zeros of $f_{6}(x)$ are positioned in an identical fashion to Figure \ref{q5_fig2} with an increasing 
-number of roots approaching $-\frac{1}{2} \pm \frac{\sqrt{3}}{2}$. 
+number of roots approaching $-\frac{1}{2} \pm \frac{\sqrt{3}}{2}i$. 
 % no clear pattern for real zeros when considering higher L
 \\
 
@@ -643,30 +656,36 @@ detail as it displays the value of the pole close to -1 for $L \leq 10$.
 \end{minipage}
 \\
 
-We find that $-\frac{1}{2} \pm \frac{\sqrt{3}}{2}$ are zeros and branch points of $f_{6}(x)$ which
-explains why the zeros approach these values. $\infty$ is the third and final branch point so any branch
-cut requires two segments. Thus the poles lying along the real axis can be considered to be lying along
-a segment of a branch cut which goes from one of the finite branch points and then to $\infty$ along 
-the real axis.
+We find that $-\frac{1}{2} \pm \frac{\sqrt{3}}{2}i$ are zeros and branch points of $f_{6}(x)$ which
+explains why the zeros and poles approach these values. $\infty$ is the third and final 
+branch point so any branch cut requires two segments. Thus the poles lying along the real 
+axis can be considered to be lying along a segment of a branch cut which goes from one of 
+the finite branch points and then to $\infty$ along the real axis.
 % (Figure 16 already presented above helps to highlight this)
 \\
+\newpage
 
 \vspace{0.4cm}
 \underline{`Anomalous' poles and zeros}
 
 \vspace{0.5cm}
-All of the poles and zeros of $f_{4}(x)$ shown in Figures \ref{q5_fig1_poles} and \ref{q5_fig1_zeros}
-are anomalous. The same is true of $f_{5}(x)$, excluding the real pole close to -1.
+All of the poles and zeros of $f_{4}(x)$, as shown in Figures \ref{q5_fig1_poles} 
+and \ref{q5_fig1_zeros}, are anomalous. The same is true of $f_{5}(x)$, excluding 
+the real pole close to -1.
 \\
 
-For $f_{1}(x)$ we have anomalous poles and zeros when these values do not lie along the branch cut
+For $f_{1}(x)$, we have anomalous poles and zeros when these values do not lie along the branch cut
 of the negative real axis, i.e.$~$they are positive real or complex. The first time we get such an
-anomalous result is for $L = 12$ where there is a pole and zero at $x = 1.1276$. Next, I will present 
+anomalous result is for $L = 12$ where there is a pole and zero at $x = 1.1276$. It is likely
+not a coincidence that this is the exact same value of $L$ for which the expoential
+decay of the Pad\'e approximants in Question 3 stops. \\
+
+Next, I will present 
 figures for results of the poles but the exact same kind of results are obtained examining the zeros. 
 Figure \ref{q5_fig3} gives an overview of where the poles/zeros are located with the different 
 colours corresponding to different values of $L$.
 
-\vspace{0.3cm}
+\vspace{0.4cm}
 \begin{minipage}{\textwidth}
 	\centering
 	\includegraphics[width=\linewidth]{q5_fig3}
@@ -699,9 +718,10 @@ We then focus on the anomalous poles which have a real part near 0 as in Figure 
 \vspace{0.4cm}
 
 We can see from Figure \ref{q5_fig4_L=50} that for large $L$ we get close to a unit circle
-of poles/zeros for the diagonal Pad\'e approximant of $f_{1}(x)$. As $L$ becomes larger, this
-circle gets closer to -1 and there are always points close to 1.
+of poles/zeros centred on the origin for the diagonal Pad\'e approximant of $f_{1}(x)$.
+As $L$ becomes larger, this circle gets closer to -1 and there are always points close to 1.
 \\
+\newpage{}
 
 \vspace{0.4cm}
 \underline{Problems with approximants to $f_{6}$}
@@ -729,6 +749,8 @@ from the actual value for $x<-1.5$.\\
 We see that for negative reals beyond about $x=-3$, the approximant is the close to the 
 negative of $f_{1}(x)$.
 
+\vspace{0.3cm}
+
 \begin{minipage}{\textwidth}
 	\centering
 	\includegraphics[width=\linewidth]{q5_fig6}
@@ -742,19 +764,27 @@ negative of $f_{1}(x)$.
 \vspace{0.3cm}
 
 Figure \ref{q5_fig6} reveals that these approixmants are indeed very close
-to $f_{1}(x)$. It also demonstrates that both even and odd values of $L$
+to $-f_{1}(x)$. It also demonstrates that both even and odd values of $L$
 can give these close approximants. Since the curve of $R_{5,5}(x)$ is much 
 further from $-f_{1}(x)$ than the other two curves, the most important
 factor affecting the accuracy is then how large the value of $L$ is.
 From our examination of the poles of approximants of $f_{6}(x)$, we can 
 see that we may use these approximants for negative $x<3$ up to a very 
 large negative pole for $L$ even while for $L$ odd no such pole exists.
-%For odd $L$ this is because the leading coefficients have 
+% For odd $L$ this is because the leading coefficients have 
 % opposite signs e.g. for $L = 15$ we have ... IDK\\
 
 % For the even case we also have negative result because ...
 % Explain with leading coeffieients for odd (pole for even?)
 % Can't think why it would be the negative actually
+
+% Q's w/ Anthony:
+% Why approximant is negative of function at the end of Q5
+% Pade approximant wrong in Q3 (even though it reaches machine precision in Fig 6)
+% Inverse iteration in Q2
+% L,L+1 would only be useful in Q2 where we have det 0 but it specfically says to use R_L,L
+% Poles & zeros the same in Q5 and what's the point of it all?
+% Goog
 
 \pagebreak
 \textbf{Program\textunderscore A.py for Programming Task}\centering\label{Program_A}
